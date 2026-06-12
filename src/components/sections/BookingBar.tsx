@@ -104,7 +104,7 @@ export function BookingBar() {
         <div className="flex-1 border-r border-white/[0.08] relative">
           <DatePicker
             selected={checkIn}
-            onChange={(date) => {
+            onChange={(date: Date | null) => {
               setCheckIn(date);
               if (checkOut && date && checkOut <= date) setCheckOut(null);
             }}
@@ -126,7 +126,7 @@ export function BookingBar() {
         <div className="flex-1 border-r border-white/[0.08] relative">
           <DatePicker
             selected={checkOut}
-            onChange={(date) => setCheckOut(date)}
+            onChange={(date: Date | null) => setCheckOut(date)}
             selectsEnd
             startDate={checkIn}
             endDate={checkOut}
