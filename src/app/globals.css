@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-display: var(--font-cormorant), serif;
+  --font-family-sans: var(--font-inter), sans-serif;
+  --color-hh-black: #111111;
+  --color-hh-off-white: #f5f2ee;
+  --color-hh-warm: #e8e4dd;
+  --color-hh-gold: #b5a47c;
+  --color-hh-green: #4a6b4d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: #fff;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), serif;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

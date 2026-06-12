@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "rooms": "Rooms",
+    "allinclusive": "All-Inclusive",
+    "dining": "Dining",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "eyebrow": "Hersonissos, Crete · ★★★★ · All-Inclusive",
+    "title": "A different kind of",
+    "titleEm": "all-inclusive",
+    "sub": "Boutique · Redesigned · Fully Renovated 2025",
+    "cta": "Discover the hotel",
+    "scroll": "Scroll"
+  },
+  "booking": {
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "selectdate": "Select date",
+    "guests": "Guests",
+    "guestval": "2 adults",
+    "board": "Board",
+    "boardval": "All-Inclusive",
+    "check": "Check availability"
+  },
+  "intro": {
+    "tag": "The Hotel",
+    "title": "Not your average",
+    "titleEm": "Crete hotel",
+    "p1": "Heronissos Hotel has been completely reimagined. Terrazzo floors, oak-slat feature walls with warm indirect lighting, and handcrafted furniture — all within a full all-inclusive formula that never compromises on quality.",
+    "p2": "Located at the heart of Hersonissos, 800 metres from the beach and walking distance from everything — yet worlds apart from the noise.",
+    "cta": "Explore our rooms"
+  },
+  "experience": {
+    "dayTag": "",
+    "dayTitle": "Sun, water & stillness",
+    "dayDesc": "Two outdoor freshwater pools, sun loungers, palm shade and clear Cretan skies from morning until sunset. Your days, yours to own.",
+    "nightTag": "",
+    "nightTitle": "The bar. The terrace.",
+    "nightDesc": "Rattan lanterns, an open cocktail bar with local spirits and cocktails — all included until midnight."
+  },
+  "rooms": {
+    "tag": "Accommodations",
+    "title": "Choose your room",
+    "superior": { "cat": "Superior", "name": "Superior Room", "size": "22–25 m²", "view": "Pool, side sea & inland view", "guests": "Up to 3 guests" },
+    "standard": { "cat": "Standard", "name": "Standard Room", "size": "20–23 m²", "view": "Pool, garden & inland view", "guests": "Up to 3 guests" },
+    "promo": { "cat": "Value", "name": "Promo Room", "size": "18–25 m²", "view": "Inland view", "guests": "Up to 3 guests" },
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "View & Book"
+  },
+  "allinclusive": {
+    "tag": "What's included",
+    "title": "Everything,",
+    "titleEm": "all day long",
+    "breakfast": { "time": "07:30", "label": "Breakfast", "desc": "Buffet-style breakfast until 10:00. Early breakfast on request." },
+    "lunch": { "time": "12:30", "label": "Lunch", "desc": "Buffet-style lunch until 14:00. Lunch baskets for excursions." },
+    "snacks": { "time": "16:00", "label": "Afternoon snacks", "desc": "Cakes and biscuits with hot beverages until 17:00." },
+    "dinner": { "time": "18:30", "label": "Dinner", "desc": "Buffet-style dinner at Labyrinth until 21:00." },
+    "drinksTitle": "Drinks 10:00–23:00",
+    "drinks": ["Draft beer", "Red & white wine", "Soft drinks & juices", "Raki & Ouzo", "Brandy, Gin, Vodka, Rum", "Cocktails (alc. & non-alc.)", "Coffee & tea", "Still water", "Wristband required"]
+  },
+  "amenities": {
+    "tag": "Facilities",
+    "title": "Everything you need",
+    "items": [
+      { "name": "Free Wi-Fi", "desc": "Full coverage in all areas and rooms." },
+      { "name": "2 Outdoor Pools", "desc": "Freshwater pools with loungers and poolside bar." },
+      { "name": "Free Parking", "desc": "On-site free parking for all guests." },
+      { "name": "Excursions", "desc": "Knossos, Samaria Gorge, Santorini and more." },
+      { "name": "Airport Transfer", "desc": "Pickup on request (extra charge)." },
+      { "name": "24/7 Reception", "desc": "Concierge and security around the clock." },
+      { "name": "Mini Market", "desc": "On-site shop for daily essentials." },
+      { "name": "Doctor on Call", "desc": "24/7 first aid and doctor available." }
+    ]
+  },
+  "dining": {
+    "tag": "Eat & Drink",
+    "title": "Two venues,",
+    "titleEm": "one great stay",
+    "labyrinthType": "Main Restaurant · Buffet",
+    "labyrinthDesc": "Enriched buffet concept for breakfast, lunch and dinner. Special menus on request. Baby highchairs available.",
+    "nissosType": "Pool Bar · Cocktails",
+    "nissosDesc": "The place to relax, sip and enjoy. Whether you're in search of serenity or a delectable drink — Nissos has it all.",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "poolbar": "Pool Bar open"
+  },
+  "cta": {
+    "tag": "Ready?",
+    "title": "Your Cretan escape",
+    "titleEm": "starts here",
+    "sub": "All-Inclusive · Boutique · Hersonissos, Crete · ★★★★",
+    "btn": "Check availability"
+  },
+  "contact": {
+    "tag": "Find us",
+    "title": "Get in touch",
+    "address": "14, Filonidou Zotou Street\nLimenas Hersonissos 70014\nCrete, Greece",
+    "reception": "Reception open 24/7"
+  },
+  "footer": {
+    "about": "A redesigned all-inclusive boutique hotel in the heart of Hersonissos, Crete. Fully renovated in 2025.",
+    "hotel": "Hotel",
+    "aboutLink": "About us",
+    "gallery": "Gallery",
+    "explore": "Explore",
+    "facilities": "Facilities",
+    "gettingHere": "Getting here",
+    "book": "Book direct",
+    "rights": "All rights reserved"
+  }
+}
