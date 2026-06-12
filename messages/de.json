@@ -1,14 +1,191 @@
 {
-  "nav": { "rooms": "Zimmer", "allinclusive": "All-Inclusive", "dining": "Essen & Trinken", "contact": "Kontakt", "book": "Jetzt buchen" },
-  "hero": { "eyebrow": "Hersonissos, Kreta · ★★★★ · All-Inclusive", "title": "Eine andere Art von", "titleEm": "All-Inclusive", "sub": "Boutique · Neu gestaltet · Vollständig renoviert 2025", "cta": "Das Hotel entdecken", "scroll": "Scrollen" },
-  "booking": { "checkin": "Anreise", "checkout": "Abreise", "selectdate": "Datum wählen", "guests": "Gäste", "guestval": "2 Erwachsene", "board": "Verpflegung", "boardval": "All-Inclusive", "check": "Verfügbarkeit prüfen" },
-  "intro": { "tag": "Das Hotel", "title": "Kein gewöhnliches", "titleEm": "Kreta Hotel", "p1": "Das Heronissos Hotel wurde vollständig neu gestaltet. Terrazzoböden, Eichenlamellenwnde mit warmem indirektem Licht und handgefertigte Möbel — alles inklusive.", "p2": "Im Herzen von Hersonissos gelegen, 800 Meter vom Strand entfernt — und doch weit weg vom Lärm.", "cta": "Unsere Zimmer erkunden" },
-  "experience": { "dayTag": "", "dayTitle": "Sonne, Wasser & Stille", "dayDesc": "Zwei Außenpools, Sonnenliegen, Palmenschatten und klarer kretischer Himmel vom Morgen bis Sonnenuntergang.", "nightTag": "", "nightTitle": "Die Bar. Die Terrasse.", "nightDesc": "Rattanlaternen, eine offene Cocktailbar mit lokalen Spirituosen — alles inklusive bis Mitternacht." },
-  "rooms": { "tag": "Unterkunft", "title": "Wählen Sie Ihr Zimmer", "superior": { "cat": "Superior", "name": "Superior Zimmer", "size": "22–25 m²", "view": "Pool-, Meer- und Gartenblick", "guests": "Bis zu 3 Gäste" }, "standard": { "cat": "Standard", "name": "Standard Zimmer", "size": "20–23 m²", "view": "Pool- und Gartenblick", "guests": "Bis zu 3 Gäste" }, "promo": { "cat": "Günstig", "name": "Promo Zimmer", "size": "18–25 m²", "view": "Hofblick", "guests": "Bis zu 3 Gäste" }, "checkinout": "Check-in 15:00 · Check-out 11:00", "cta": "Ansehen & Buchen" },
-  "allinclusive": { "tag": "Was ist inklusive", "title": "Alles,", "titleEm": "den ganzen Tag", "breakfast": { "time": "07:30", "label": "Frühstück", "desc": "Buffetfrühstück bis 10:00. Frühstück auf Anfrage." }, "lunch": { "time": "12:30", "label": "Mittagessen", "desc": "Mittagsbuffet bis 14:00. Lunchpakete für Ausflüge." }, "snacks": { "time": "16:00", "label": "Nachmittagssnack", "desc": "Gebäck mit Heißgetränken bis 17:00." }, "dinner": { "time": "18:30", "label": "Abendessen", "desc": "Abendbuffet im Labyrinth bis 21:00." }, "drinksTitle": "Getränke 10:00–23:00", "drinks": ["Fassbier", "Rot- & Weißwein", "Softdrinks & Säfte", "Raki & Ouzo", "Brandy, Gin, Vodka, Rum", "Cocktails (mit/ohne Alk.)", "Kaffee & Tee", "Stilles Wasser", "Armband erforderlich"] },
-  "amenities": { "tag": "Einrichtungen", "title": "Alles was Sie brauchen", "items": [ { "name": "Gratis WLAN", "desc": "Volle Abdeckung in allen Bereichen." }, { "name": "2 Außenpools", "desc": "Süßwasserpools mit Liegen und Poolbar." }, { "name": "Gratis Parkplatz", "desc": "Kostenloser Parkplatz vor Ort." }, { "name": "Ausflüge", "desc": "Knossos, Samaria Schlucht, Santorin und mehr." }, { "name": "Flughafentransfer", "desc": "Auf Anfrage (Aufpreis)." }, { "name": "24/7 Rezeption", "desc": "Concierge und Sicherheit rund um die Uhr." }, { "name": "Mini-Markt", "desc": "Shop für den täglichen Bedarf." }, { "name": "Arzt auf Abruf", "desc": "Erste Hilfe und Arzt 24/7." } ] },
-  "dining": { "tag": "Essen & Trinken", "title": "Zwei Orte,", "titleEm": "ein toller Aufenthalt", "labyrinthType": "Hauptrestaurant · Buffet", "labyrinthDesc": "Reichhaltiges Buffet für Frühstück, Mittag- und Abendessen. Spezialmenüs auf Anfrage.", "nissosType": "Poolbar · Cocktails", "nissosDesc": "Der Ort zum Entspannen und Genießen. Alles was Sie möchten — bei Nissos.", "breakfast": "Frühstück", "lunch": "Mittagessen", "dinner": "Abendessen", "poolbar": "Poolbar geöffnet" },
-  "cta": { "tag": "Bereit?", "title": "Ihr kretisches Abenteuer", "titleEm": "beginnt hier", "sub": "All-Inclusive · Boutique · Hersonissos, Kreta · ★★★★", "btn": "Verfügbarkeit prüfen" },
-  "contact": { "tag": "Finden Sie uns", "title": "Kontakt aufnehmen", "address": "14, Filonidou Zotou Street\nLimenas Hersonissos 70014\nKreta, Griechenland", "reception": "Rezeption 24/7 geöffnet" },
-  "footer": { "about": "Ein neu gestaltetes All-Inclusive Boutique-Hotel im Herzen von Hersonissos, Kreta. Vollständig renoviert 2025.", "hotel": "Hotel", "aboutLink": "Über uns", "gallery": "Galerie", "explore": "Entdecken", "facilities": "Einrichtungen", "gettingHere": "Anreise", "book": "Direkt buchen", "rights": "Alle Rechte vorbehalten" }
+  "nav": {
+    "rooms": "Zimmer",
+    "allinclusive": "All-Inclusive",
+    "dining": "Essen & Trinken",
+    "contact": "Kontakt",
+    "book": "Jetzt buchen"
+  },
+  "hero": {
+    "eyebrow": "Hersonissos, Kreta · ★★★★ · All-Inclusive",
+    "title": "Eine andere Art von",
+    "titleEm": "All-Inclusive",
+    "sub": "Boutique · Neu gestaltet · Vollständig renoviert 2025",
+    "cta": "Das Hotel entdecken",
+    "scroll": "Scrollen"
+  },
+  "booking": {
+    "checkin": "Anreise",
+    "checkout": "Abreise",
+    "selectdate": "Datum wählen",
+    "guests": "Gäste",
+    "guestval": "2 Erwachsene",
+    "board": "Verpflegung",
+    "boardval": "All-Inclusive",
+    "check": "Verfügbarkeit prüfen"
+  },
+  "intro": {
+    "tag": "Das Hotel",
+    "title": "Kein gewöhnliches",
+    "titleEm": "Kreta Hotel",
+    "p1": "Das Heronissos Hotel wurde vollständig neu gestaltet. Terrazzoböden, Eichenlamellenwnde mit warmem indirektem Licht und handgefertigte Möbel — alles inklusive.",
+    "p2": "Im Herzen von Hersonissos gelegen, 800 Meter vom Strand entfernt — und doch weit weg vom Lärm.",
+    "cta": "Unsere Zimmer erkunden"
+  },
+  "experience": {
+    "dayTag": "",
+    "dayTitle": "Sonne, Wasser & Stille",
+    "dayDesc": "Treten Sie nach draußen und finden Sie Ihren Platz. Eine Sonnenliege am Wasser, ein Buch im Schatten oder einfach gar nichts. Zwei Süßwasserpools und schwarze Liegen gehören Ihnen vom Morgen bis zum letzten Licht über den kretischen Hügeln. Manchmal ist der beste Plan kein Plan.",
+    "nightTag": "",
+    "nightTitle": "Die Bar. Die Terrasse.",
+    "nightDesc": "Wenn die Hitze des Tages nachlässt, erwacht die Terrasse zum Leben. Nehmen Sie Platz, bestellen Sie einen Raki Sour und lassen Sie den Abend seine Zeit nehmen. Rattanlaternen tauchen den Pool in warmes Licht, die Bar ist geöffnet, die Cocktails fließen — und jeder Tropfen ist bis Mitternacht inklusive."
+  },
+  "rooms": {
+    "tag": "Unterkunft",
+    "title": "Wählen Sie Ihr Zimmer",
+    "superior": {
+      "cat": "Superior",
+      "name": "Superior Zimmer",
+      "size": "22–25 m²",
+      "view": "Pool-, Meer- und Gartenblick",
+      "guests": "Bis zu 3 Gäste"
+    },
+    "standard": {
+      "cat": "Standard",
+      "name": "Standard Zimmer",
+      "size": "20–23 m²",
+      "view": "Pool- und Gartenblick",
+      "guests": "Bis zu 3 Gäste"
+    },
+    "promo": {
+      "cat": "Günstig",
+      "name": "Promo Zimmer",
+      "size": "18–25 m²",
+      "view": "Hofblick",
+      "guests": "Bis zu 3 Gäste"
+    },
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "Zimmer entdecken"
+  },
+  "allinclusive": {
+    "tag": "Was ist inklusive",
+    "title": "Alles,",
+    "titleEm": "den ganzen Tag",
+    "breakfast": {
+      "time": "07:30",
+      "label": "Frühstück",
+      "desc": "Buffetfrühstück bis 10:00. Frühstück auf Anfrage."
+    },
+    "lunch": {
+      "time": "12:30",
+      "label": "Mittagessen",
+      "desc": "Mittagsbuffet bis 14:00. Lunchpakete für Ausflüge."
+    },
+    "snacks": {
+      "time": "16:00",
+      "label": "Nachmittagssnack",
+      "desc": "Gebäck mit Heißgetränken bis 17:00."
+    },
+    "dinner": {
+      "time": "18:30",
+      "label": "Abendessen",
+      "desc": "Abendbuffet im Labyrinth bis 21:00."
+    },
+    "drinksTitle": "Getränke 10:00–23:00",
+    "drinks": [
+      "Fassbier",
+      "Rot- & Weißwein",
+      "Softdrinks & Säfte",
+      "Raki & Ouzo",
+      "Brandy, Gin, Vodka, Rum",
+      "Cocktails (mit/ohne Alk.)",
+      "Kaffee & Tee",
+      "Stilles Wasser",
+      "Armband erforderlich"
+    ]
+  },
+  "amenities": {
+    "tag": "Einrichtungen",
+    "title": "Alles was Sie brauchen",
+    "items": [
+      {
+        "name": "Gratis WLAN",
+        "desc": "Volle Abdeckung in allen Bereichen."
+      },
+      {
+        "name": "2 Außenpools",
+        "desc": "Süßwasserpools mit Liegen und Poolbar."
+      },
+      {
+        "name": "Gratis Parkplatz",
+        "desc": "Kostenloser Parkplatz vor Ort."
+      },
+      {
+        "name": "Ausflüge",
+        "desc": "Knossos, Samaria Schlucht, Santorin und mehr."
+      },
+      {
+        "name": "Flughafentransfer",
+        "desc": "Auf Anfrage (Aufpreis)."
+      },
+      {
+        "name": "24/7 Rezeption",
+        "desc": "Concierge und Sicherheit rund um die Uhr."
+      },
+      {
+        "name": "Mini-Markt",
+        "desc": "Shop für den täglichen Bedarf."
+      },
+      {
+        "name": "Arzt auf Abruf",
+        "desc": "Erste Hilfe und Arzt 24/7."
+      }
+    ]
+  },
+  "dining": {
+    "tag": "Essen & Trinken",
+    "title": "Zwei Orte,",
+    "titleEm": "ein toller Aufenthalt",
+    "labyrinthType": "Hauptrestaurant · Buffet",
+    "labyrinthDesc": "Reichhaltiges Buffet für Frühstück, Mittag- und Abendessen. Spezialmenüs auf Anfrage.",
+    "nissosType": "Poolbar · Cocktails",
+    "nissosDesc": "Der Ort zum Entspannen und Genießen. Alles was Sie möchten — bei Nissos.",
+    "breakfast": "Frühstück",
+    "lunch": "Mittagessen",
+    "dinner": "Abendessen",
+    "poolbar": "Poolbar geöffnet"
+  },
+  "cta": {
+    "tag": "Bereit?",
+    "title": "Ihr kretisches Abenteuer",
+    "titleEm": "beginnt hier",
+    "sub": "All-Inclusive · Boutique · Hersonissos, Kreta · ★★★★",
+    "btn": "Verfügbarkeit prüfen"
+  },
+  "contact": {
+    "tag": "Finden Sie uns",
+    "title": "Kontakt aufnehmen",
+    "address": "14, Filonidou Zotou Street\nLimenas Hersonissos 70014\nKreta, Griechenland",
+    "reception": "Rezeption 24/7 geöffnet"
+  },
+  "footer": {
+    "about": "Ein neu gestaltetes All-Inclusive Boutique-Hotel im Herzen von Hersonissos, Kreta. Vollständig renoviert 2025.",
+    "hotel": "Hotel",
+    "aboutLink": "Über uns",
+    "gallery": "Galerie",
+    "explore": "Entdecken",
+    "facilities": "Einrichtungen",
+    "gettingHere": "Anreise",
+    "book": "Direkt buchen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "crete": {
+    "tag": "Die Insel",
+    "title": "Kreta. Die Insel, die",
+    "titleEm": "bleibt.",
+    "desc": "Antike Paläste, Schluchten durch die Berge, weiß getünchte Dörfer und eine Küstenlinie, die jeden Tag anders aussieht. Hersonissos liegt im Herzen von alldem — der perfekte Ausgangspunkt, um eine der schönsten Inseln des Mittelmeers zu entdecken.",
+    "tag1": "25km von Heraklion",
+    "tag2": "800m vom Strand",
+    "tag3": "Tor zur Insel"
+  }
 }

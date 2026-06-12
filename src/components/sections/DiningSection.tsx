@@ -5,14 +5,13 @@ export function DiningSection() {
   const t = useTranslations("dining");
 
   return (
-    <section id="dining" className="grid grid-cols-2 gap-[72px] items-start px-10 py-[88px]">
+    <section id="dining" className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[72px] items-start px-6 md:px-10 py-16 md:py-[88px]">
       <div>
         <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">{t("tag")}</p>
         <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light leading-[1.15] mb-10">
           {t("title")} <br /><em>{t("titleEm")}</em>
         </h2>
 
-        {/* Labyrinth */}
         <div className="mb-8">
           <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{t("labyrinthType")}</p>
           <h3 className="font-display text-[22px] font-light mb-3">Labyrinth</h3>
@@ -27,7 +26,6 @@ export function DiningSection() {
           </div>
         </div>
 
-        {/* Nissos */}
         <div className="pt-8 border-t border-black/10">
           <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{t("nissosType")}</p>
           <h3 className="font-display text-[22px] font-light mb-3">Nissos</h3>
@@ -45,7 +43,6 @@ export function DiningSection() {
           alt="Nissos Pool Bar"
           fill
           className="object-cover"
-          // TODO: replace with /images/dining/poolbar-evening.jpg
         />
       </div>
     </section>

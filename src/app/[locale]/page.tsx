@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/ui/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { BookingBar } from "@/components/sections/BookingBar";
+import { TrustBar } from "@/components/sections/TrustBar";
 import { IntroSection } from "@/components/sections/IntroSection";
+import { CreteSection } from "@/components/sections/CreteSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { RoomsSection } from "@/components/sections/RoomsSection";
 import { AllInclusiveSection } from "@/components/sections/AllInclusiveSection";
@@ -17,8 +18,9 @@ export default function HomePage() {
     <main>
       <Navbar />
       <HeroSection />
-      <BookingBar />
+      <TrustBar />
       <IntroSection />
+      <CreteSection />
       <ExperienceSection />
       <RoomsSection />
       <AllInclusiveSection />

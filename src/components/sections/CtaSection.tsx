@@ -11,7 +11,7 @@ export function CtaSection() {
       </h2>
       <p className="text-[13px] text-white/40 mb-10">{t("sub")}</p>
       <a
-        href="https://hersonissosbeach.reserve-online.net/"
+        href="https://www.booking.com/hotel/gr/hersonissos.html"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block border border-white/50 text-white text-[11px] tracking-[0.22em] uppercase px-12 py-4 hover:bg-white hover:text-[#111] transition-all"

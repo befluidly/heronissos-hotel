@@ -35,43 +35,111 @@
   "experience": {
     "dayTag": "",
     "dayTitle": "Sun, water & stillness",
-    "dayDesc": "Two outdoor freshwater pools, sun loungers, palm shade and clear Cretan skies from morning until sunset. Your days, yours to own.",
+    "dayDesc": "Step outside and find your spot. A sun lounger by the water, a book in the shade, or simply nothing at all. Two freshwater pools and black loungers are yours from morning until the last light fades over the Cretan hills. Some days, the best plan is no plan at all.",
     "nightTag": "",
     "nightTitle": "The bar. The terrace.",
-    "nightDesc": "Rattan lanterns, an open cocktail bar with local spirits and cocktails — all included until midnight."
+    "nightDesc": "As the heat of the day fades, the terrace comes alive. Pull up a stool, order a Raki sour, and let the evening take its time. Rattan lanterns cast a warm glow over the pool, the bar is open, the cocktails are flowing — and every last drop is included until midnight."
   },
   "rooms": {
     "tag": "Accommodations",
     "title": "Choose your room",
-    "superior": { "cat": "Superior", "name": "Superior Room", "size": "22–25 m²", "view": "Pool, side sea & inland view", "guests": "Up to 3 guests" },
-    "standard": { "cat": "Standard", "name": "Standard Room", "size": "20–23 m²", "view": "Pool, garden & inland view", "guests": "Up to 3 guests" },
-    "promo": { "cat": "Value", "name": "Promo Room", "size": "18–25 m²", "view": "Inland view", "guests": "Up to 3 guests" },
+    "superior": {
+      "cat": "Superior",
+      "name": "Superior Room",
+      "size": "22–25 m²",
+      "view": "Pool, side sea & inland view",
+      "guests": "Up to 3 guests"
+    },
+    "standard": {
+      "cat": "Standard",
+      "name": "Standard Room",
+      "size": "20–23 m²",
+      "view": "Pool, garden & inland view",
+      "guests": "Up to 3 guests"
+    },
+    "promo": {
+      "cat": "Value",
+      "name": "Promo Room",
+      "size": "18–25 m²",
+      "view": "Inland view",
+      "guests": "Up to 3 guests"
+    },
     "checkinout": "Check-in 15:00 · Check-out 11:00",
-    "cta": "View & Book"
+    "cta": "Discover this room"
   },
   "allinclusive": {
     "tag": "What's included",
     "title": "Everything,",
     "titleEm": "all day long",
-    "breakfast": { "time": "07:30", "label": "Breakfast", "desc": "Buffet-style breakfast until 10:00. Early breakfast on request." },
-    "lunch": { "time": "12:30", "label": "Lunch", "desc": "Buffet-style lunch until 14:00. Lunch baskets for excursions." },
-    "snacks": { "time": "16:00", "label": "Afternoon snacks", "desc": "Cakes and biscuits with hot beverages until 17:00." },
-    "dinner": { "time": "18:30", "label": "Dinner", "desc": "Buffet-style dinner at Labyrinth until 21:00." },
-    "drinksTitle": "Drinks 10:00–23:00",
-    "drinks": ["Draft beer", "Red & white wine", "Soft drinks & juices", "Raki & Ouzo", "Brandy, Gin, Vodka, Rum", "Cocktails (alc. & non-alc.)", "Coffee & tea", "Still water", "Wristband required"]
+    "breakfast": {
+      "time": "07:30",
+      "label": "Breakfast",
+      "desc": "Buffet-style breakfast until 10:00. Early breakfast on request."
+    },
+    "lunch": {
+      "time": "12:30",
+      "label": "Lunch",
+      "desc": "Buffet-style lunch until 14:00. Lunch baskets for excursions."
+    },
+    "snacks": {
+      "time": "16:00",
+      "label": "Afternoon snacks",
+      "desc": "Cakes and biscuits with hot beverages until 17:00."
+    },
+    "dinner": {
+      "time": "18:30",
+      "label": "Dinner",
+      "desc": "Buffet-style dinner at Labyrinth until 21:00."
+    },
+    "drinksTitle": "Drinks",
+    "drinks": [
+      "Draft beer",
+      "Red & white wine",
+      "Soft drinks & juices",
+      "Raki & Ouzo",
+      "Brandy, Gin, Vodka, Rum",
+      "Cocktails (alc. & non-alc.)",
+      "Coffee & tea",
+      "Still water",
+      "Wristband required"
+    ]
   },
   "amenities": {
     "tag": "Facilities",
     "title": "Everything you need",
     "items": [
-      { "name": "Free Wi-Fi", "desc": "Full coverage in all areas and rooms." },
-      { "name": "2 Outdoor Pools", "desc": "Freshwater pools with loungers and poolside bar." },
-      { "name": "Free Parking", "desc": "On-site free parking for all guests." },
-      { "name": "Excursions", "desc": "Knossos, Samaria Gorge, Santorini and more." },
-      { "name": "Airport Transfer", "desc": "Pickup on request (extra charge)." },
-      { "name": "24/7 Reception", "desc": "Concierge and security around the clock." },
-      { "name": "Mini Market", "desc": "On-site shop for daily essentials." },
-      { "name": "Doctor on Call", "desc": "24/7 first aid and doctor available." }
+      {
+        "name": "Free Wi-Fi",
+        "desc": "Full coverage in all areas and rooms."
+      },
+      {
+        "name": "2 Outdoor Pools",
+        "desc": "Freshwater pools with loungers and poolside bar."
+      },
+      {
+        "name": "Free Parking",
+        "desc": "On-site free parking for all guests."
+      },
+      {
+        "name": "Excursions",
+        "desc": "Knossos, Samaria Gorge, Santorini and more."
+      },
+      {
+        "name": "Airport Transfer",
+        "desc": "Pickup on request (extra charge)."
+      },
+      {
+        "name": "24/7 Reception",
+        "desc": "Concierge and security around the clock."
+      },
+      {
+        "name": "Mini Market",
+        "desc": "On-site shop for daily essentials."
+      },
+      {
+        "name": "Doctor on Call",
+        "desc": "24/7 first aid and doctor available."
+      }
     ]
   },
   "dining": {
@@ -110,5 +178,14 @@
     "gettingHere": "Getting here",
     "book": "Book direct",
     "rights": "All rights reserved"
+  },
+  "crete": {
+    "tag": "The island",
+    "title": "Crete. The island that",
+    "titleEm": "stays with you.",
+    "desc": "Ancient palaces, gorges cut through mountains, sun-bleached villages and a coastline that never looks the same twice. Hersonissos sits at the heart of it all — the perfect base to explore one of the Mediterranean's greatest islands.",
+    "tag1": "25km from Heraklion",
+    "tag2": "800m from the beach",
+    "tag3": "Gateway to the island"
   }
 }

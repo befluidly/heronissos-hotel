@@ -4,7 +4,7 @@ export function ContactSection() {
   const t = useTranslations("contact");
 
   return (
-    <section id="contact" className="bg-[#f5f2ee] grid grid-cols-2 gap-[72px] items-start px-10 py-[88px]">
+    <section id="contact" className="bg-[#f5f2ee] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[72px] items-start px-6 md:px-10 py-16 md:py-[88px]">
       <div>
         <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">{t("tag")}</p>
         <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-10">{t("title")}</h2>

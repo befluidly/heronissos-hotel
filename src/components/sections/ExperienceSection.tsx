@@ -1,49 +1,53 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function ExperienceSection() {
   const t = useTranslations("experience");
 
   return (
-    <div id="experience" className="grid grid-cols-2 min-h-[480px]">
-      {/* Day */}
-      <div
-        className="relative flex flex-col justify-end p-12 overflow-hidden group"
-        style={{ background: "#b8d4cc" }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.03]"
-          style={{ backgroundImage: "url(/images/exterior/achterkant-computer-mockup.jpeg)" }}
-          // TODO: replace with /images/pool/pool-day.jpg
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent" />
-        <div className="relative z-10 text-white">
-          <p className="text-[10px] tracking-[0.26em] uppercase text-white/50 mb-2">{t("dayTag")}</p>
-          <h3 className="font-display text-[32px] font-light leading-[1.15] mb-3">{t("dayTitle")}</h3>
-          <p className="text-[13px] leading-[1.75] text-white/65 max-w-sm">{t("dayDesc")}</p>
+    <div id="experience" className="bg-[#faf9f7]">
+
+      {/* Row 1: tekst links, foto rechts */}
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_480px] items-center px-6 md:px-16 py-14 md:py-20 gap-10 md:gap-20">
+        <div>
+          <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-4">{t("dayTag")}</p>
+          <h3 className="font-display text-[clamp(26px,3.5vw,40px)] font-light leading-[1.15] mb-5">
+            {t("dayTitle")}
+          </h3>
+          <p className="text-[13px] leading-[1.85] text-[#666]">{t("dayDesc")}</p>
+        </div>
+        <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#e0dcd5]">
+          <Image
+            src="/images/exterior/achterkant-computer-mockup.jpeg"
+            alt="Pool"
+            fill
+            className="object-cover hover:scale-[1.03] transition-transform duration-700"
+          />
         </div>
       </div>
 
-      {/* Night */}
-      <div
-        className="relative flex flex-col justify-end p-12 overflow-hidden group"
-        style={{ background: "#1a1410" }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.03]"
-          style={{ backgroundImage: "url(/images/pool/POOL-VIEW-003.JPEG)" }}
-          // TODO: replace with /images/pool/pool-evening.jpg
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20" />
-        <div className="relative z-10 text-white">
-          <p className="text-[10px] tracking-[0.26em] uppercase text-white/40 mb-2">{t("nightTag")}</p>
-          <h3 className="font-display text-[32px] font-light leading-[1.15] mb-3">
-            {t("nightTitle").split(". ").map((part, i) => (
-              <span key={i}>{i > 0 ? <><br /><em>{part}</em></> : part + "."}</span>
-            ))}
+      {/* Divider */}
+      <div className="mx-16 h-px bg-black/[0.06]" />
+
+      {/* Row 2: foto links, tekst rechts */}
+      <div className="grid grid-cols-1 md:grid-cols-[480px_1fr] items-center px-6 md:px-16 py-14 md:py-20 gap-10 md:gap-20">
+        <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#e0dcd5] order-2 md:order-1">
+          <Image
+            src="/images/pool/POOL-VIEW-003.JPEG"
+            alt="Bar & Terrace"
+            fill
+            className="object-cover hover:scale-[1.03] transition-transform duration-700"
+          />
+        </div>
+        <div className="order-1 md:order-2">
+          <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-4">{t("nightTag")}</p>
+          <h3 className="font-display text-[clamp(26px,3.5vw,40px)] font-light leading-[1.15] mb-5">
+            {t("nightTitle")}
           </h3>
-          <p className="text-[13px] leading-[1.75] text-white/60 max-w-sm">{t("nightDesc")}</p>
+          <p className="text-[13px] leading-[1.85] text-[#666]">{t("nightDesc")}</p>
         </div>
       </div>
+
     </div>
   );
 }

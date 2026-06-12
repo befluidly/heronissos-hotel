@@ -1,14 +1,191 @@
 {
-  "nav": { "rooms": "Kamers", "allinclusive": "All-Inclusive", "dining": "Eten & Drinken", "contact": "Contact", "book": "Boek Nu" },
-  "hero": { "eyebrow": "Chersonissos, Kreta · ★★★★ · All-Inclusive", "title": "Een andere manier van", "titleEm": "all-inclusive", "sub": "Boutique · Gerenoveerd · Volledig vernieuwd 2025", "cta": "Ontdek het hotel", "scroll": "Scroll" },
-  "booking": { "checkin": "Aankomst", "checkout": "Vertrek", "selectdate": "Kies datum", "guests": "Gasten", "guestval": "2 volwassenen", "board": "Formule", "boardval": "All-Inclusive", "check": "Beschikbaarheid" },
-  "intro": { "tag": "Het Hotel", "title": "Geen gewoon", "titleEm": "Kreta hotel", "p1": "Heronissos Hotel is volledig heruitgevonden. Terrazzo vloeren, eiken lamelwanden met warm indirect licht en handgemaakt meubilair — alles inbegrepen in een all-inclusive formule zonder compromissen.", "p2": "Gelegen in het hart van Chersonissos, 800 meter van het strand — en toch ver weg van de drukte.", "cta": "Bekijk onze kamers" },
-  "experience": { "dayTag": "", "dayTitle": "Zon, water & rust", "dayDesc": "Twee buitenzwembaden, ligbedden, palmboomschaduw en heldere Kretenzische lucht van 's ochtends tot zonsondergang.", "nightTag": "", "nightTitle": "De bar. Het terras.", "nightDesc": "Rotanlampen, een open cocktailbar met lokale dranken — alles inbegrepen tot middernacht." },
-  "rooms": { "tag": "Accommodatie", "title": "Kies uw kamer", "superior": { "cat": "Superior", "name": "Superior Kamer", "size": "22–25 m²", "view": "Zwembad-, zee- en tuinzicht", "guests": "Max. 3 gasten" }, "standard": { "cat": "Standaard", "name": "Standaard Kamer", "size": "20–23 m²", "view": "Zwembad- en tuinzicht", "guests": "Max. 3 gasten" }, "promo": { "cat": "Voordeel", "name": "Promo Kamer", "size": "18–25 m²", "view": "Binnenaanzicht", "guests": "Max. 3 gasten" }, "checkinout": "Check-in 15:00 · Check-out 11:00", "cta": "Bekijk & Boek" },
-  "allinclusive": { "tag": "Wat is inbegrepen", "title": "Alles,", "titleEm": "de hele dag", "breakfast": { "time": "07:30", "label": "Ontbijt", "desc": "Buffet ontbijt tot 10:00. Vroeg ontbijt op verzoek." }, "lunch": { "time": "12:30", "label": "Lunch", "desc": "Buffet lunch tot 14:00. Lunchpakketten voor excursies." }, "snacks": { "time": "16:00", "label": "Middagsnack", "desc": "Gebak en koekjes met warme dranken tot 17:00." }, "dinner": { "time": "18:30", "label": "Diner", "desc": "Buffet diner bij Labyrinth tot 21:00." }, "drinksTitle": "Dranken 10:00–23:00", "drinks": ["Tap bier", "Rode & witte wijn", "Frisdranken & sappen", "Raki & Ouzo", "Brandy, Gin, Vodka, Rum", "Cocktails (alc. & non-alc.)", "Koffie & thee", "Plat water", "Polsband verplicht"] },
-  "amenities": { "tag": "Faciliteiten", "title": "Alles wat u nodig heeft", "items": [ { "name": "Gratis Wi-Fi", "desc": "Volledig gedekt in alle zones en kamers." }, { "name": "2 Buitenzwembaden", "desc": "Zoetwaterzwembaden met ligbedden en poolbar." }, { "name": "Gratis Parkeren", "desc": "Gratis parking op het terrein." }, { "name": "Excursies", "desc": "Knossos, Samaria Kloof, Santorini en meer." }, { "name": "Luchthaventransfer", "desc": "Op verzoek beschikbaar (toeslag)." }, { "name": "24/7 Receptie", "desc": "Conciërge en beveiliging dag en nacht." }, { "name": "Minimarkt", "desc": "Winkel voor dagelijkse behoeften." }, { "name": "Arts op afroep", "desc": "Eerste hulp en arts 24/7." } ] },
-  "dining": { "tag": "Eten & Drinken", "title": "Twee plekken,", "titleEm": "één geweldig verblijf", "labyrinthType": "Hoofdrestaurant · Buffet", "labyrinthDesc": "Uitgebreid buffet voor ontbijt, lunch en diner. Speciale menu's op verzoek.", "nissosType": "Poolbar · Cocktails", "nissosDesc": "De plek om te ontspannen en te genieten. Alles wat u wilt, bij Nissos.", "breakfast": "Ontbijt", "lunch": "Lunch", "dinner": "Diner", "poolbar": "Poolbar open" },
-  "cta": { "tag": "Klaar?", "title": "Uw Kretenzisch avontuur", "titleEm": "begint hier", "sub": "All-Inclusive · Boutique · Chersonissos, Kreta · ★★★★", "btn": "Beschikbaarheid controleren" },
-  "contact": { "tag": "Vind ons", "title": "Neem contact op", "address": "14, Filonidou Zotou Street\nLimenas Hersonissos 70014\nKreta, Griekenland", "reception": "Receptie 24/7 open" },
-  "footer": { "about": "Een herontwikkeld all-inclusive boutiquehotel in het hart van Chersonissos, Kreta. Volledig gerenoveerd in 2025.", "hotel": "Hotel", "aboutLink": "Over ons", "gallery": "Galerij", "explore": "Ontdekken", "facilities": "Faciliteiten", "gettingHere": "Bereikbaarheid", "book": "Direct boeken", "rights": "Alle rechten voorbehouden" }
+  "nav": {
+    "rooms": "Kamers",
+    "allinclusive": "All-Inclusive",
+    "dining": "Eten & Drinken",
+    "contact": "Contact",
+    "book": "Boek Nu"
+  },
+  "hero": {
+    "eyebrow": "Chersonissos, Kreta · ★★★★ · All-Inclusive",
+    "title": "Een andere manier van",
+    "titleEm": "all-inclusive",
+    "sub": "Boutique · Gerenoveerd · Volledig vernieuwd 2025",
+    "cta": "Ontdek het hotel",
+    "scroll": "Scroll"
+  },
+  "booking": {
+    "checkin": "Aankomst",
+    "checkout": "Vertrek",
+    "selectdate": "Kies datum",
+    "guests": "Gasten",
+    "guestval": "2 volwassenen",
+    "board": "Formule",
+    "boardval": "All-Inclusive",
+    "check": "Beschikbaarheid"
+  },
+  "intro": {
+    "tag": "Het Hotel",
+    "title": "Geen gewoon",
+    "titleEm": "Kreta hotel",
+    "p1": "Heronissos Hotel is volledig heruitgevonden. Terrazzo vloeren, eiken lamelwanden met warm indirect licht en handgemaakt meubilair — alles inbegrepen in een all-inclusive formule zonder compromissen.",
+    "p2": "Gelegen in het hart van Chersonissos, 800 meter van het strand — en toch ver weg van de drukte.",
+    "cta": "Bekijk onze kamers"
+  },
+  "experience": {
+    "dayTag": "",
+    "dayTitle": "Zon, water & stilte",
+    "dayDesc": "Stap naar buiten en zoek jouw plekje. Een ligbed aan het water, een boek in de schaduw, of gewoon niets. Twee zoetwaterzwembaden en zwarte ligbedden zijn van jou, van 's ochtends vroeg tot het laatste licht over de Kretenzische heuvels verdwijnt. Soms is de beste planning helemaal geen planning.",
+    "nightTag": "",
+    "nightTitle": "De bar. Het terras.",
+    "nightDesc": "Als de hitte van de dag wegtrekt, komt het terras tot leven. Schuif aan, bestel een Raki sour en laat de avond zijn gang gaan. Rotanlampen werpen een warm schijnsel over het zwembad, de bar is open, de cocktails vloeien — en elk druppeltje is inbegrepen tot middernacht."
+  },
+  "rooms": {
+    "tag": "Accommodatie",
+    "title": "Kies uw kamer",
+    "superior": {
+      "cat": "Superior",
+      "name": "Superior Kamer",
+      "size": "22–25 m²",
+      "view": "Zwembad-, zee- en tuinzicht",
+      "guests": "Max. 3 gasten"
+    },
+    "standard": {
+      "cat": "Standaard",
+      "name": "Standaard Kamer",
+      "size": "20–23 m²",
+      "view": "Zwembad- en tuinzicht",
+      "guests": "Max. 3 gasten"
+    },
+    "promo": {
+      "cat": "Voordeel",
+      "name": "Promo Kamer",
+      "size": "18–25 m²",
+      "view": "Binnenaanzicht",
+      "guests": "Max. 3 gasten"
+    },
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "Bekijk deze kamer"
+  },
+  "allinclusive": {
+    "tag": "Wat is inbegrepen",
+    "title": "Alles,",
+    "titleEm": "de hele dag",
+    "breakfast": {
+      "time": "07:30",
+      "label": "Ontbijt",
+      "desc": "Buffet ontbijt tot 10:00. Vroeg ontbijt op verzoek."
+    },
+    "lunch": {
+      "time": "12:30",
+      "label": "Lunch",
+      "desc": "Buffet lunch tot 14:00. Lunchpakketten voor excursies."
+    },
+    "snacks": {
+      "time": "16:00",
+      "label": "Middagsnack",
+      "desc": "Gebak en koekjes met warme dranken tot 17:00."
+    },
+    "dinner": {
+      "time": "18:30",
+      "label": "Diner",
+      "desc": "Buffet diner bij Labyrinth tot 21:00."
+    },
+    "drinksTitle": "Dranken",
+    "drinks": [
+      "Tap bier",
+      "Rode & witte wijn",
+      "Frisdranken & sappen",
+      "Raki & Ouzo",
+      "Brandy, Gin, Vodka, Rum",
+      "Cocktails (alc. & non-alc.)",
+      "Koffie & thee",
+      "Plat water",
+      "Polsband verplicht"
+    ]
+  },
+  "amenities": {
+    "tag": "Faciliteiten",
+    "title": "Alles wat u nodig heeft",
+    "items": [
+      {
+        "name": "Gratis Wi-Fi",
+        "desc": "Volledig gedekt in alle zones en kamers."
+      },
+      {
+        "name": "2 Buitenzwembaden",
+        "desc": "Zoetwaterzwembaden met ligbedden en poolbar."
+      },
+      {
+        "name": "Gratis Parkeren",
+        "desc": "Gratis parking op het terrein."
+      },
+      {
+        "name": "Excursies",
+        "desc": "Knossos, Samaria Kloof, Santorini en meer."
+      },
+      {
+        "name": "Luchthaventransfer",
+        "desc": "Op verzoek beschikbaar (toeslag)."
+      },
+      {
+        "name": "24/7 Receptie",
+        "desc": "Conciërge en beveiliging dag en nacht."
+      },
+      {
+        "name": "Minimarkt",
+        "desc": "Winkel voor dagelijkse behoeften."
+      },
+      {
+        "name": "Arts op afroep",
+        "desc": "Eerste hulp en arts 24/7."
+      }
+    ]
+  },
+  "dining": {
+    "tag": "Eten & Drinken",
+    "title": "Twee plekken,",
+    "titleEm": "één geweldig verblijf",
+    "labyrinthType": "Hoofdrestaurant · Buffet",
+    "labyrinthDesc": "Uitgebreid buffet voor ontbijt, lunch en diner. Speciale menu's op verzoek.",
+    "nissosType": "Poolbar · Cocktails",
+    "nissosDesc": "De plek om te ontspannen en te genieten. Alles wat u wilt, bij Nissos.",
+    "breakfast": "Ontbijt",
+    "lunch": "Lunch",
+    "dinner": "Diner",
+    "poolbar": "Poolbar open"
+  },
+  "cta": {
+    "tag": "Klaar?",
+    "title": "Uw Kretenzisch avontuur",
+    "titleEm": "begint hier",
+    "sub": "All-Inclusive · Boutique · Chersonissos, Kreta · ★★★★",
+    "btn": "Beschikbaarheid controleren"
+  },
+  "contact": {
+    "tag": "Vind ons",
+    "title": "Neem contact op",
+    "address": "14, Filonidou Zotou Street\nLimenas Hersonissos 70014\nKreta, Griekenland",
+    "reception": "Receptie 24/7 open"
+  },
+  "footer": {
+    "about": "Een herontwikkeld all-inclusive boutiquehotel in het hart van Chersonissos, Kreta. Volledig gerenoveerd in 2025.",
+    "hotel": "Hotel",
+    "aboutLink": "Over ons",
+    "gallery": "Galerij",
+    "explore": "Ontdekken",
+    "facilities": "Faciliteiten",
+    "gettingHere": "Bereikbaarheid",
+    "book": "Direct boeken",
+    "rights": "Alle rechten voorbehouden"
+  },
+  "crete": {
+    "tag": "Het eiland",
+    "title": "Kreta. Het eiland dat je",
+    "titleEm": "niet loslaat.",
+    "desc": "Oude paleizen, kloven door de bergen, witte dorpjes en een kustlijn die elke dag anders oogt. Chersonissos ligt in het hart van dit alles — het perfecte vertrekpunt om een van de mooiste eilanden van de Middellandse Zee te ontdekken.",
+    "tag1": "25km van Heraklion",
+    "tag2": "800m van het strand",
+    "tag3": "Poort naar het eiland"
+  }
 }

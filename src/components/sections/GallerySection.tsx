@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const GALLERY_PREVIEW = [
   { src: "/images/pool/POOL-VIEW-001.JPEG", alt: "Pool" },
-  { src: "/images/rooms/2-HeronissosHotel.jpg", alt: "Room" },
+  { src: "/images/rooms/superior-3.jpg", alt: "Room" },
   { src: "/images/dining/RESTAURANT-VIEW-001.JPEG", alt: "Restaurant" },
   { src: "/images/dining/RESTAURANT-VIEW-004.JPEG", alt: "Dining" },
 ];
@@ -13,8 +13,8 @@ const GALLERY_PREVIEW = [
 const ALL_PHOTOS = [
   { src: "/images/pool/POOL-VIEW-001.JPEG", alt: "Pool" },
   { src: "/images/pool/dji_fly_20220825_214128_156_1661453034744_photo_optimized(1).jpeg", alt: "Pool aerial" },
-  { src: "/images/rooms/2-HeronissosHotel.jpg", alt: "Room" },
-  { src: "/images/rooms/promo-room-2.JPEG", alt: "Promo Room" },
+  { src: "/images/rooms/superior-3.jpg", alt: "Room" },
+  { src: "/images/rooms/promo-2.JPEG", alt: "Promo Room" },
   { src: "/images/dining/9-IMG_2838.jpg", alt: "Dining" },
   { src: "/images/dining/RESTAURANT-VIEW-001.JPEG", alt: "Restaurant" },
   { src: "/images/dining/RESTAURANT-VIEW-004.JPEG", alt: "Restaurant view" },
