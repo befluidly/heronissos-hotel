@@ -9,7 +9,7 @@ export async function getHeroSlides() {
       alt,
       order
     }
-  `)
+  `, {}, { next: { revalidate: 60 } })
 }
 
 // Gallery photos — ordered by order field
@@ -21,10 +21,10 @@ export async function getGalleryPhotos() {
       alt,
       order
     }
-  `)
+  `, {}, { next: { revalidate: 60 } })
 }
 
-// Room by type
+// Rooms
 export async function getRooms() {
   return client.fetch(`
     *[_type == "room"] {
@@ -33,7 +33,7 @@ export async function getRooms() {
       mainImage,
       gallery
     }
-  `)
+  `, {}, { next: { revalidate: 60 } })
 }
 
 // Hotel info — always returns the first document
@@ -49,5 +49,5 @@ export async function getHotelInfo() {
       bookingScore,
       tripadvisorScore
     }
-  `)
+  `, {}, { next: { revalidate: 60 } })
 }
