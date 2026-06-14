@@ -1,32 +1,53 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { urlFor } from "@/lib/sanity";
 
-const SLIDES = [
-  "/images/rooms/superior-13.JPG",
-  "/images/rooms/superior-8.JPG",
-  "/images/pool/POOL-VIEW-001.JPEG",
+const FALLBACK_SLIDES = [
+  { src: "/images/rooms/superior-13.JPG", alt: "Heronissos Hotel Room" },
+  { src: "/images/rooms/superior-8.JPG", alt: "Heronissos Hotel Room" },
+  { src: "/images/pool/POOL-VIEW-001.JPEG", alt: "Heronissos Hotel Pool" },
 ];
 
-export function HeroSection() {
+interface SanitySlide {
+  _id: string;
+  image: { asset: { _ref: string } };
+  alt?: string;
+}
+
+interface Props {
+  slides?: SanitySlide[];
+}
+
+export function HeroSection({ slides }: Props) {
   const t = useTranslations("hero");
   const [activeSlide, setActiveSlide] = useState(0);
 
+  const slideList = slides && slides.length > 0
+    ? slides.map(s => ({
+        src: urlFor(s.image).width(1920).quality(85).url(),
+        alt: s.alt || "Heronissos Hotel",
+      }))
+    : FALLBACK_SLIDES;
+
+  const slideCount = slideList.length;
+  const slideCountRef = useRef(slideCount);
+  slideCountRef.current = slideCount;
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % SLIDES.length);
+      setActiveSlide((prev) => (prev + 1) % slideCountRef.current);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, []); // stable — uses ref internally
 
   return (
-    // top-10 = lang bar (40px), h-16 = mobile nav, md:h-22 = desktop nav
     <section id="hero" className="relative h-screen min-h-[600px] bg-[#111] overflow-hidden pt-[calc(40px+64px)] md:pt-[calc(40px+88px)]">
-      {SLIDES.map((src, i) => (
+      {slideList.map((slide, i) => (
         <div
           key={i}
           className="absolute inset-0 bg-cover bg-center transition-opacity duration-[1200ms]"
-          style={{ backgroundImage: `url(${src})`, opacity: i === activeSlide ? 1 : 0 }}
+          style={{ backgroundImage: `url(${slide.src})`, opacity: i === activeSlide ? 1 : 0 }}
         />
       ))}
 
@@ -52,7 +73,7 @@ export function HeroSection() {
       </div>
 
       <div className="absolute bottom-8 right-6 md:right-10 flex gap-2">
-        {SLIDES.map((_, i) => (
+        {slideList.map((_, i) => (
           <button
             key={i}
             onClick={() => setActiveSlide(i)}

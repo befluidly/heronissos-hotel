@@ -28,8 +28,8 @@
     "tag": "The Hotel",
     "title": "Not your average",
     "titleEm": "Crete hotel",
-    "p1": "Heronissos Hotel has been completely reimagined. Terrazzo floors, oak-slat feature walls with warm indirect lighting, and handcrafted furniture — all within a full all-inclusive formula that never compromises on quality.",
-    "p2": "Located at the heart of Hersonissos, 800 metres from the beach and walking distance from everything — yet worlds apart from the noise.",
+    "p1": "Heronissos Hotel has been completely reimagined. Terrazzo floors, oak-slat feature walls with warm indirect lighting, and handcrafted furniture — all within an all-inclusive formula with meals, drinks and snacks from morning until 23:00.",
+    "p2": "Located at the heart of Hersonissos, 50 metres from the beach and walking distance from everything — yet worlds apart from the noise.",
     "cta": "Explore our rooms"
   },
   "experience": {
@@ -185,7 +185,7 @@
     "titleEm": "stays with you.",
     "desc": "Ancient palaces, gorges cut through mountains, sun-bleached villages and a coastline that never looks the same twice. Hersonissos sits at the heart of it all — the perfect base to explore one of the Mediterranean's greatest islands.",
     "tag1": "25km from Heraklion",
-    "tag2": "800m from the beach",
+    "tag2": "50m from the beach",
     "tag3": "Gateway to the island"
   }
 }
