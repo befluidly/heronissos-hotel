@@ -4,7 +4,8 @@
     "allinclusive": "All-Inclusive",
     "dining": "Eten & Drinken",
     "contact": "Contact",
-    "book": "Boek Nu"
+    "book": "Boek Nu",
+    "extras": "Extra's"
   },
   "hero": {
     "eyebrow": "Chersonissos, Kreta · ★★★★ · All-Inclusive",
@@ -187,5 +188,24 @@
     "tag1": "25km van Heraklion",
     "tag2": "50m van het strand",
     "tag3": "Poort naar het eiland"
+  },
+  "extras": {
+    "tag": "Extra services",
+    "title": "Voorbij het hotel.",
+    "titleEm": "Kreta in.",
+    "intro": "Van eilanduitstapjes tot luchthaventransfers en speciale kamerdecoraties — ons team regelt alles. Alle diensten zijn beschikbaar tegen extra kosten, op aanvraag.",
+    "excursionsTag": "Ontdek het eiland",
+    "excursionsTitle": "Excursies",
+    "transferTag": "Aankomst & vertrek",
+    "transferTitle": "Mobiliteit",
+    "occasionsTag": "Maak het onvergetelijk",
+    "occasionsTitle": "Speciale gelegenheden",
+    "occasionsNote": "Alle pakketten voor speciale gelegenheden zijn beschikbaar tegen extra kosten. Prijzen op aanvraag.",
+    "ctaTitle": "Klaar om uw",
+    "ctaTitleEm": "perfecte verblijf te plannen?",
+    "ctaSub": "Neem contact op met onze assistent-manager voor elk verzoek — voor of tijdens uw verblijf.",
+    "carRentalTitle": "Autohuur",
+    "carRentalDesc": "Ontdek Kreta op uw eigen tempo. Wij regelen een huurauto die rechtstreeks aan het hotel wordt geleverd — geen wachtrijen, geen gedoe. Beschikbaar voor elke duur.",
+    "introText": "Kreta is niet zomaar een bestemming. Het is een levend museum van oude beschavingen, dramatische landschappen en een gastvrijheid die je lang bijblijft nadat je vertrokken bent. Van het paleis van Knossos tot de kloven van Samaria, van lokale wijnmakerijen tot verborgen zeegrotten — het eiland beloont wie het ontdekt. Bij Heronissos Hotel maken we het makkelijk. Ons team regelt alles zodat jij je kan focussen op wat telt: Kreta op zijn best."
   }
 }

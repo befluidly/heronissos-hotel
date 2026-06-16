@@ -4,7 +4,8 @@
     "allinclusive": "All-Inclusive",
     "dining": "Jedzenie",
     "contact": "Kontakt",
-    "book": "Zarezerwuj"
+    "book": "Zarezerwuj",
+    "extras": "Dodatki"
   },
   "hero": {
     "eyebrow": "Hersonissos, Kreta · ★★★★ · All-Inclusive",
@@ -187,5 +188,24 @@
     "tag1": "25km od Heraklionu",
     "tag2": "50m od plaży",
     "tag3": "Brama na wyspę"
+  },
+  "extras": {
+    "tag": "Extra services",
+    "title": "Poza hotelem.",
+    "titleEm": "W głąb Krety.",
+    "intro": "Od wycieczek po wyspie, przez transfery lotniskowe, po specjalne dekoracje w pokoju — nasz zespół organizuje wszystko. Wszystkie usługi są dostępne za dodatkową opłatą, na życzenie.",
+    "excursionsTag": "Odkryj wyspę",
+    "excursionsTitle": "Wycieczki",
+    "transferTag": "Przyjazdy i odjazdy",
+    "transferTitle": "Mobilność",
+    "occasionsTag": "Spraw, by było niezapomniane",
+    "occasionsTitle": "Specjalne okazje",
+    "occasionsNote": "Wszystkie pakiety na specjalne okazje są dostępne za dodatkową opłatą. Ceny na życzenie.",
+    "ctaTitle": "Gotowy zaplanować",
+    "ctaTitleEm": "idealny pobyt?",
+    "ctaSub": "Skontaktuj się z naszym asystentem managera w sprawie dowolnej prośby — przed lub podczas pobytu.",
+    "carRentalTitle": "Wynajem samochodu",
+    "carRentalDesc": "Odkrywaj Kretę we własnym tempie. Organizujemy samochód dostarczony bezpośrednio do hotelu — bez kolejek, bez kłopotów. Dostępny na dowolny czas.",
+    "introText": "Kreta to nie tylko cel podróży. To żywe muzeum starożytnych cywilizacji, dramatycznych krajobrazów i szczodrości ducha, która pozostaje z tobą długo po wyjeździe. Od pałacu Knossos po wąwozy Samarii, od lokalnych winiarni po ukryte morskie groty — wyspa nagradza tych, którzy ją odkrywają. W hotelu Heronissos ułatwiamy wszystko. Nasz zespół organizuje każdy szczegół, abyś mógł skupić się na tym, co najważniejsze: przeżywaniu Krety w najlepszym wydaniu."
   }
 }

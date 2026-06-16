@@ -51,3 +51,20 @@ export async function getHotelInfo() {
     }
   `, {}, { next: { revalidate: 60 } })
 }
+
+// Extras items — ordered by category then order
+export async function getExtrasItems() {
+  return client.fetch(`
+    *[_type == "extrasItem"] | order(category asc, order asc) {
+      _id,
+      category,
+      title,
+      shortDesc,
+      longDesc,
+      image,
+      duration,
+      includes,
+      order
+    }
+  `, {}, { next: { revalidate: 60 } })
+}

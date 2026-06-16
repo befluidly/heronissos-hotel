@@ -4,7 +4,8 @@
     "allinclusive": "Tout-Inclus",
     "dining": "Restauration",
     "contact": "Contact",
-    "book": "Réserver"
+    "book": "Réserver",
+    "extras": "Extras"
   },
   "hero": {
     "eyebrow": "Hersonissos, Crète · ★★★★ · Tout-Inclus",
@@ -187,5 +188,24 @@
     "tag1": "À 25km d'Héraklion",
     "tag2": "À 50m de la plage",
     "tag3": "Porte vers l'île"
+  },
+  "extras": {
+    "tag": "Extra services",
+    "title": "Au-delà de l'hôtel.",
+    "titleEm": "À la découverte de la Crète.",
+    "intro": "Des excursions sur l'île aux transferts aéroport en passant par les décorations spéciales — notre équipe s'occupe de tout. Tous les services sont disponibles moyennant un supplément, sur demande.",
+    "excursionsTag": "Explorer l'île",
+    "excursionsTitle": "Excursions",
+    "transferTag": "Arrivées et départs",
+    "transferTitle": "Se déplacer",
+    "occasionsTag": "Rendre inoubliable",
+    "occasionsTitle": "Occasions spéciales",
+    "occasionsNote": "Tous les forfaits pour occasions spéciales sont disponibles moyennant un supplément. Prix sur demande.",
+    "ctaTitle": "Prêt à planifier votre",
+    "ctaTitleEm": "séjour parfait?",
+    "ctaSub": "Contactez notre assistant manager pour toute demande — avant ou pendant votre séjour.",
+    "carRentalTitle": "Location de voiture",
+    "carRentalDesc": "Explorez la Crète à votre rythme. Nous organisons une voiture de location livrée directement à l'hôtel — sans file d'attente, sans tracas. Disponible pour toute durée.",
+    "introText": "La Crète n'est pas qu'une destination. C'est un musée vivant de civilisations anciennes, de paysages spectaculaires et d'une générosité d'esprit qui reste en vous longtemps après votre départ. Du palais de Knossos aux gorges de Samaria, des vignobles locaux aux criques cachées — l'île récompense ceux qui l'explorent. À l'Hôtel Heronissos, nous vous facilitons la vie. Notre équipe s'occupe de tout pour que vous puissiez vous concentrer sur l'essentiel: vivre la Crète dans toute sa splendeur."
   }
 }

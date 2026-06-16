@@ -4,7 +4,8 @@
     "allinclusive": "All-Inclusive",
     "dining": "Ristorante",
     "contact": "Contatti",
-    "book": "Prenota ora"
+    "book": "Prenota ora",
+    "extras": "Extra"
   },
   "hero": {
     "eyebrow": "Hersonissos, Creta · ★★★★ · All-Inclusive",
@@ -187,5 +188,24 @@
     "tag1": "A 25km da Heraklion",
     "tag2": "A 50m dalla spiaggia",
     "tag3": "Porta sull'isola"
+  },
+  "extras": {
+    "tag": "Extra services",
+    "title": "Oltre l'hotel.",
+    "titleEm": "Alla scoperta di Creta.",
+    "intro": "Dalle escursioni sull'isola ai transfer aeroportuali fino alle decorazioni speciali in camera — il nostro team organizza tutto. Tutti i servizi sono disponibili a un costo aggiuntivo, su richiesta.",
+    "excursionsTag": "Esplora l'isola",
+    "excursionsTitle": "Escursioni",
+    "transferTag": "Arrivi e partenze",
+    "transferTitle": "Spostarsi",
+    "occasionsTag": "Rendi indimenticabile",
+    "occasionsTitle": "Occasioni speciali",
+    "occasionsNote": "Tutti i pacchetti per occasioni speciali sono disponibili a un costo aggiuntivo. Prezzi su richiesta.",
+    "ctaTitle": "Pronto a pianificare il tuo",
+    "ctaTitleEm": "soggiorno perfetto?",
+    "ctaSub": "Contatta il nostro assistant manager per qualsiasi richiesta — prima o durante il tuo soggiorno.",
+    "carRentalTitle": "Noleggio auto",
+    "carRentalDesc": "Esplora Creta al tuo ritmo. Organizziamo un'auto a noleggio consegnata direttamente in hotel — nessuna coda, nessun problema. Disponibile per qualsiasi durata.",
+    "introText": "Creta non è solo una destinazione. È un museo vivente di antiche civiltà, paesaggi drammatici e una generosità di spirito che rimane con te molto dopo la partenza. Dal palazzo di Cnosso alle gole di Samaria, dalle cantine locali alle calette nascoste — l'isola premia chi la esplora. All'Hotel Heronissos rendiamo tutto semplice. Il nostro team organizza ogni dettaglio perché tu possa concentrarti su ciò che conta: vivere Creta al meglio."
   }
 }

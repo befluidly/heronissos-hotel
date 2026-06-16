@@ -21,12 +21,17 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const currentLocale = pathname.split("/")[1] || "en";
+  const isHome = pathname === `/${currentLocale}` || pathname === `/${currentLocale}/`;
 
   const switchLocale = (locale: string) => {
     const segments = pathname.split("/");
     segments[1] = locale;
     router.push(segments.join("/"));
   };
+
+  // On home page use anchor links, on other pages link to home + anchor
+  const navLink = (anchor: string) =>
+    isHome ? `#${anchor}` : `/${currentLocale}#${anchor}`;
 
   return (
     <>
@@ -51,7 +56,7 @@ export function Navbar() {
 
       {/* Main nav */}
       <nav className="fixed top-10 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-10 h-16 md:h-22 bg-[#1b1b1b] transition-all duration-300">
-        <Link href="#hero">
+        <Link href={`/${currentLocale}`}>
           <Image
             src="/images/logo/Heronissos_Logo_White-01.png"
             alt="Heronissos Hotel"
@@ -67,13 +72,21 @@ export function Navbar() {
           {(["rooms", "allinclusive", "dining", "contact"] as const).map((key) => (
             <li key={key}>
               <a
-                href={`#${key}`}
+                href={navLink(key)}
                 className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors"
               >
                 {t(key)}
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href={`/${currentLocale}/extras`}
+              className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors"
+            >
+              {t("extras")}
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -94,13 +107,20 @@ export function Navbar() {
           {(["rooms", "allinclusive", "dining", "contact"] as const).map((key) => (
             <a
               key={key}
-              href={`#${key}`}
+              href={navLink(key)}
               onClick={() => setMenuOpen(false)}
               className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white px-6 py-4 border-b border-white/[0.06] transition-colors"
             >
               {t(key)}
             </a>
           ))}
+          <Link
+            href={`/${currentLocale}/extras`}
+            onClick={() => setMenuOpen(false)}
+            className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white px-6 py-4 border-b border-white/[0.06] transition-colors"
+          >
+            {t("extras")}
+          </Link>
         </div>
       )}
     </>

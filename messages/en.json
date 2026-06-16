@@ -4,7 +4,8 @@
     "allinclusive": "All-Inclusive",
     "dining": "Dining",
     "contact": "Contact",
-    "book": "Book Now"
+    "book": "Book Now",
+    "extras": "Extras"
   },
   "hero": {
     "eyebrow": "Hersonissos, Crete · ★★★★ · All-Inclusive",
@@ -187,5 +188,24 @@
     "tag1": "25km from Heraklion",
     "tag2": "50m from the beach",
     "tag3": "Gateway to the island"
+  },
+  "extras": {
+    "tag": "Extra services",
+    "title": "Beyond the hotel.",
+    "titleEm": "Into Crete.",
+    "intro": "From island excursions to airport transfers and special room touches — our team arranges everything. All services are available at an additional charge, on request.",
+    "excursionsTag": "Explore the island",
+    "excursionsTitle": "Excursions",
+    "transferTag": "Arrivals & departures",
+    "transferTitle": "Getting around",
+    "occasionsTag": "Make it memorable",
+    "occasionsTitle": "Special occasions",
+    "occasionsNote": "All special occasion packages are available at an additional charge. Prices on request.",
+    "ctaTitle": "Ready to plan your",
+    "ctaTitleEm": "perfect stay?",
+    "ctaSub": "Contact our assistant manager for any request — before or during your stay.",
+    "carRentalTitle": "Car rental",
+    "carRentalDesc": "Explore Crete at your own pace. We arrange a rental car delivered directly to the hotel — no queues, no hassle. Available for any duration.",
+    "introText": "Crete is not just a destination. It is a living museum of ancient civilisations, dramatic landscapes and a generosity of spirit that stays with you long after you leave. From the palace of Knossos to the gorges of Samaria, from local wineries to hidden sea caves — the island rewards those who explore it. At Heronissos Hotel, we make it easy. Our team arranges everything so you can focus on what matters: experiencing Crete at its best."
   }
 }
