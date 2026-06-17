@@ -29,7 +29,6 @@ export function Navbar() {
     router.push(segments.join("/"));
   };
 
-  // On home page use anchor links, on other pages link to home + anchor
   const navLink = (anchor: string) =>
     isHome ? `#${anchor}` : `/${currentLocale}#${anchor}`;
 
@@ -71,19 +70,18 @@ export function Navbar() {
         <ul className="hidden md:flex gap-9 list-none">
           {(["rooms", "allinclusive", "dining", "contact"] as const).map((key) => (
             <li key={key}>
-              <a
-                href={navLink(key)}
-                className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors"
-              >
+              <a href={navLink(key)} className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors">
                 {t(key)}
               </a>
             </li>
           ))}
           <li>
-            <Link
-              href={`/${currentLocale}/extras`}
-              className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors"
-            >
+            <a href={navLink("booking")} className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors">
+              {t("book")}
+            </a>
+          </li>
+          <li>
+            <Link href={`/${currentLocale}/extras`} className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white transition-colors">
               {t("extras")}
             </Link>
           </li>
@@ -114,6 +112,13 @@ export function Navbar() {
               {t(key)}
             </a>
           ))}
+          <a
+            href={navLink("booking")}
+            onClick={() => setMenuOpen(false)}
+            className="text-[13px] tracking-[0.14em] uppercase text-white/75 hover:text-white px-6 py-4 border-b border-white/[0.06] transition-colors"
+          >
+            {t("book")}
+          </a>
           <Link
             href={`/${currentLocale}/extras`}
             onClick={() => setMenuOpen(false)}

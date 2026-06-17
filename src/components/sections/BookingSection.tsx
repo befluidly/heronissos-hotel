@@ -16,26 +16,24 @@ export function BookingSection() {
     children: "0",
     remarks: "",
   });
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("sending");
-    try {
-      const res = await fetch("/api/booking-request", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) {
-        setStatus("success");
-        setForm({ firstName: "", lastName: "", email: "", checkin: "", checkout: "", roomType: "", adults: "2", children: "0", remarks: "" });
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
+    const subject = encodeURIComponent(`Booking request — ${form.lastName}`);
+    const body = encodeURIComponent(
+`Booking request — ${form.lastName}
+
+Name: ${form.firstName} ${form.lastName}
+Email: ${form.email}
+Check-in: ${form.checkin}
+Check-out: ${form.checkout}
+Room type: ${form.roomType || "No preference"}
+Adults: ${form.adults}
+Children: ${form.children}${form.remarks ? `\nRemarks: ${form.remarks}` : ""}
+
+Sent via heronissoshotel.gr`
+    );
+    window.location.href = `mailto:hero@nissos.to?subject=${subject}&body=${body}`;
   };
 
   const inputClass = "w-full bg-[#f5f2ee] border border-[#e0dcd5] px-4 py-3 text-[13px] text-[#111] placeholder-[#aaa] focus:outline-none focus:border-[#111] transition-colors";
@@ -53,81 +51,68 @@ export function BookingSection() {
             <p className="text-[13px] leading-[1.8] text-[#666]">{t("directDesc")}</p>
           </div>
 
-          <div>
-            {status === "success" ? (
-              <div className="border border-[#b5a47c] p-8 text-center">
-                <p className="text-[13px] text-[#666]">{t("success")}</p>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div>
+                <label className={labelClass}>First name</label>
+                <input type="text" required className={inputClass} value={form.firstName} onChange={e => setForm({ ...form, firstName: e.target.value })} />
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div>
-                    <label className={labelClass}>First name</label>
-                    <input type="text" required className={inputClass} value={form.firstName} onChange={e => setForm({ ...form, firstName: e.target.value })} />
-                  </div>
-                  <div>
-                    <label className={labelClass}>Last name</label>
-                    <input type="text" required className={inputClass} value={form.lastName} onChange={e => setForm({ ...form, lastName: e.target.value })} />
-                  </div>
-                  <div className="col-span-2">
-                    <label className={labelClass}>{t("email")}</label>
-                    <input type="email" required className={inputClass} value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
-                  </div>
-                </div>
+              <div>
+                <label className={labelClass}>Last name</label>
+                <input type="text" required className={inputClass} value={form.lastName} onChange={e => setForm({ ...form, lastName: e.target.value })} />
+              </div>
+              <div className="col-span-2">
+                <label className={labelClass}>{t("email")}</label>
+                <input type="email" required className={inputClass} value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
+              </div>
+            </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div>
-                    <label className={labelClass}>{t("checkin")}</label>
-                    <input type="date" required className={inputClass} value={form.checkin} onChange={e => setForm({ ...form, checkin: e.target.value })} />
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t("checkout")}</label>
-                    <input type="date" required className={inputClass} value={form.checkout} onChange={e => setForm({ ...form, checkout: e.target.value })} />
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t("adults")}</label>
-                    <select className={inputClass} value={form.adults} onChange={e => setForm({ ...form, adults: e.target.value })}>
-                      {[1,2,3,4,5,6].map(n => <option key={n} value={n}>{n}</option>)}
-                    </select>
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t("children")}</label>
-                    <select className={inputClass} value={form.children} onChange={e => setForm({ ...form, children: e.target.value })}>
-                      {[0,1,2,3,4].map(n => <option key={n} value={n}>{n}</option>)}
-                    </select>
-                  </div>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div>
+                <label className={labelClass}>{t("checkin")}</label>
+                <input type="date" required className={inputClass} value={form.checkin} onChange={e => setForm({ ...form, checkin: e.target.value })} />
+              </div>
+              <div>
+                <label className={labelClass}>{t("checkout")}</label>
+                <input type="date" required className={inputClass} value={form.checkout} onChange={e => setForm({ ...form, checkout: e.target.value })} />
+              </div>
+              <div>
+                <label className={labelClass}>{t("adults")}</label>
+                <select required className={inputClass} value={form.adults} onChange={e => setForm({ ...form, adults: e.target.value })}>
+                  {[1,2,3,4,5,6].map(n => <option key={n} value={n}>{n}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className={labelClass}>{t("children")}</label>
+                <select required className={inputClass} value={form.children} onChange={e => setForm({ ...form, children: e.target.value })}>
+                  {[0,1,2,3,4].map(n => <option key={n} value={n}>{n}</option>)}
+                </select>
+              </div>
+            </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-3">
-                  <div>
-                    <label className={labelClass}>{t("roomtype")}</label>
-                    <select className={inputClass} value={form.roomType} onChange={e => setForm({ ...form, roomType: e.target.value })}>
-                      <option value="">—</option>
-                      <option value="Superior Room">{t("superior")}</option>
-                      <option value="Standard Room">{t("standard")}</option>
-                      <option value="Promo Room">{t("promo")}</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t("remarks")}</label>
-                    <input type="text" className={inputClass} value={form.remarks} onChange={e => setForm({ ...form, remarks: e.target.value })} />
-                  </div>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-3">
+              <div>
+                <label className={labelClass}>{t("roomtype")}</label>
+                <select required className={inputClass} value={form.roomType} onChange={e => setForm({ ...form, roomType: e.target.value })}>
+                  <option value="">—</option>
+                  <option value="Superior Room">{t("superior")}</option>
+                  <option value="Standard Room">{t("standard")}</option>
+                  <option value="Promo Room">{t("promo")}</option>
+                </select>
+              </div>
+              <div>
+                <label className={labelClass}>{t("remarks")}</label>
+                <input type="text" className={inputClass} value={form.remarks} onChange={e => setForm({ ...form, remarks: e.target.value })} />
+              </div>
+            </div>
 
-                {status === "error" && (
-                  <p className="text-[12px] text-red-500">{t("error")}</p>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={status === "sending"}
-                  className="bg-[#1b1b1b] text-white text-[11px] tracking-[0.2em] uppercase px-12 py-4 hover:bg-black transition-colors disabled:opacity-50"
-                >
-                  {status === "sending" ? t("sending") : t("send")}
-                </button>
-              </form>
-            )}
-          </div>
+            <button
+              type="submit"
+              className="bg-[#1b1b1b] text-white text-[11px] tracking-[0.2em] uppercase px-12 py-4 hover:bg-black transition-colors"
+            >
+              {t("send")}
+            </button>
+          </form>
         </div>
       </div>
 
