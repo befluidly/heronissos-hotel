@@ -46,14 +46,12 @@ export function TrustBar({ hotelInfo }: Props) {
           <span className="text-[10px] tracking-[0.16em] uppercase text-white/35">Travelers&apos; Choice 2024</span>
         </div>
       </div>
-      <Link
-        href="https://www.booking.com/hotel/gr/hersonissos.html"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a
+        href="#booking"
         className="text-[11px] tracking-[0.2em] uppercase text-white border border-white/30 px-6 py-2.5 hover:bg-white hover:text-[#111] transition-all whitespace-nowrap"
       >
-        Check on Booking.com →
-      </Link>
+        Book your stay →
+      </a>
     </div>
   );
 }

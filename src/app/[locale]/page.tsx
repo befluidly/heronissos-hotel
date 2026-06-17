@@ -9,6 +9,7 @@ import { AmenitiesSection } from "@/components/sections/AmenitiesSection";
 import { GallerySection } from "@/components/sections/GallerySection";
 import { DiningSection } from "@/components/sections/DiningSection";
 import { CtaSection } from "@/components/sections/CtaSection";
+import { BookingSection } from "@/components/sections/BookingSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { getHeroSlides, getGalleryPhotos, getRooms, getHotelInfo } from "@/lib/queries";
 
@@ -39,6 +40,7 @@ export default async function HomePage() {
       <GallerySection photos={galleryPhotos} />
       <DiningSection />
       <CtaSection />
+      <BookingSection />
       <ContactSection hotelInfo={hotelInfo} />
     </main>
   );
