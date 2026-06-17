@@ -38,150 +38,80 @@ export function BookingSection() {
     }
   };
 
-  const inputClass = "w-full bg-white border border-[#ddd] px-4 py-3 text-[13px] text-[#111] placeholder-[#aaa] focus:outline-none focus:border-[#111] transition-colors";
+  const inputClass = "w-full bg-[#f5f2ee] border border-[#e0dcd5] px-4 py-3 text-[13px] text-[#111] placeholder-[#aaa] focus:outline-none focus:border-[#111] transition-colors";
   const labelClass = "block text-[10px] tracking-[0.16em] uppercase text-[#999] mb-1.5";
 
   return (
-    <section id="booking" className="bg-[#f5f2ee] px-6 md:px-10 py-16 md:py-[88px]">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">{t("bookYourStay")}</p>
-        <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-12">
-          {t("bookYourStay")}
-        </h2>
+    <section id="booking" className="bg-white">
 
-        {/* Two columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#ddd]">
-
-          {/* Booking.com */}
-          <div className="bg-white p-8 md:p-10 flex flex-col">
-            <p className="text-[10px] tracking-[0.2em] uppercase text-[#999] mb-3">Option 1</p>
-            <h3 className="font-display text-[26px] font-light mb-3">{t("bookingCom")}</h3>
-            <p className="text-[13px] leading-[1.8] text-[#666] mb-8 flex-1">{t("bookingComDesc")}</p>
-            <Link
-              href="https://www.booking.com/hotel/gr/hersonissos.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-center bg-[#1b1b1b] text-white text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-black transition-colors"
-            >
-              Booking.com →
-            </Link>
+      {/* Option 1 — Direct request */}
+      <div className="px-6 md:px-10 py-16 md:py-[88px] border-b border-[#e0dcd5]">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20">
+          <div>
+            <p className="text-[10px] tracking-[0.26em] uppercase text-[#b5a47c] mb-3">Recommended</p>
+            <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-4">{t("directTitle")}</h2>
+            <p className="text-[13px] leading-[1.8] text-[#666]">{t("directDesc")}</p>
           </div>
 
-          {/* Direct request form */}
-          <div className="bg-white p-8 md:p-10">
-            <p className="text-[10px] tracking-[0.2em] uppercase text-[#999] mb-3">Option 2</p>
-            <h3 className="font-display text-[26px] font-light mb-3">{t("directTitle")}</h3>
-            <p className="text-[13px] leading-[1.8] text-[#666] mb-6">{t("directDesc")}</p>
-
+          <div>
             {status === "success" ? (
-              <div className="border border-[#b5a47c] p-6 text-center">
+              <div className="border border-[#b5a47c] p-8 text-center">
                 <p className="text-[13px] text-[#666]">{t("success")}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   <div>
                     <label className={labelClass}>First name</label>
-                    <input
-                      type="text"
-                      required
-                      className={inputClass}
-                      value={form.firstName}
-                      onChange={e => setForm({ ...form, firstName: e.target.value })}
-                    />
+                    <input type="text" required className={inputClass} value={form.firstName} onChange={e => setForm({ ...form, firstName: e.target.value })} />
                   </div>
                   <div>
-                    <label className={labelClass}>{t("name")}</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Last name"
-                      className={inputClass}
-                      value={form.lastName}
-                      onChange={e => setForm({ ...form, lastName: e.target.value })}
-                    />
+                    <label className={labelClass}>Last name</label>
+                    <input type="text" required className={inputClass} value={form.lastName} onChange={e => setForm({ ...form, lastName: e.target.value })} />
+                  </div>
+                  <div className="col-span-2">
+                    <label className={labelClass}>{t("email")}</label>
+                    <input type="email" required className={inputClass} value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
                   </div>
                 </div>
 
-                <div>
-                  <label className={labelClass}>{t("email")}</label>
-                  <input
-                    type="email"
-                    required
-                    className={inputClass}
-                    value={form.email}
-                    onChange={e => setForm({ ...form, email: e.target.value })}
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   <div>
                     <label className={labelClass}>{t("checkin")}</label>
-                    <input
-                      type="date"
-                      required
-                      className={inputClass}
-                      value={form.checkin}
-                      onChange={e => setForm({ ...form, checkin: e.target.value })}
-                    />
+                    <input type="date" required className={inputClass} value={form.checkin} onChange={e => setForm({ ...form, checkin: e.target.value })} />
                   </div>
                   <div>
                     <label className={labelClass}>{t("checkout")}</label>
-                    <input
-                      type="date"
-                      required
-                      className={inputClass}
-                      value={form.checkout}
-                      onChange={e => setForm({ ...form, checkout: e.target.value })}
-                    />
+                    <input type="date" required className={inputClass} value={form.checkout} onChange={e => setForm({ ...form, checkout: e.target.value })} />
                   </div>
-                </div>
-
-                <div>
-                  <label className={labelClass}>{t("roomtype")}</label>
-                  <select
-                    className={inputClass}
-                    value={form.roomType}
-                    onChange={e => setForm({ ...form, roomType: e.target.value })}
-                  >
-                    <option value="">—</option>
-                    <option value="Superior Room">{t("superior")}</option>
-                    <option value="Standard Room">{t("standard")}</option>
-                    <option value="Promo Room">{t("promo")}</option>
-                  </select>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
                   <div>
                     <label className={labelClass}>{t("adults")}</label>
-                    <select
-                      className={inputClass}
-                      value={form.adults}
-                      onChange={e => setForm({ ...form, adults: e.target.value })}
-                    >
+                    <select className={inputClass} value={form.adults} onChange={e => setForm({ ...form, adults: e.target.value })}>
                       {[1,2,3,4,5,6].map(n => <option key={n} value={n}>{n}</option>)}
                     </select>
                   </div>
                   <div>
                     <label className={labelClass}>{t("children")}</label>
-                    <select
-                      className={inputClass}
-                      value={form.children}
-                      onChange={e => setForm({ ...form, children: e.target.value })}
-                    >
+                    <select className={inputClass} value={form.children} onChange={e => setForm({ ...form, children: e.target.value })}>
                       {[0,1,2,3,4].map(n => <option key={n} value={n}>{n}</option>)}
                     </select>
                   </div>
                 </div>
 
-                <div>
-                  <label className={labelClass}>{t("remarks")}</label>
-                  <textarea
-                    rows={3}
-                    className={inputClass}
-                    value={form.remarks}
-                    onChange={e => setForm({ ...form, remarks: e.target.value })}
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-3">
+                  <div>
+                    <label className={labelClass}>{t("roomtype")}</label>
+                    <select className={inputClass} value={form.roomType} onChange={e => setForm({ ...form, roomType: e.target.value })}>
+                      <option value="">—</option>
+                      <option value="Superior Room">{t("superior")}</option>
+                      <option value="Standard Room">{t("standard")}</option>
+                      <option value="Promo Room">{t("promo")}</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className={labelClass}>{t("remarks")}</label>
+                    <input type="text" className={inputClass} value={form.remarks} onChange={e => setForm({ ...form, remarks: e.target.value })} />
+                  </div>
                 </div>
 
                 {status === "error" && (
@@ -191,7 +121,7 @@ export function BookingSection() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="w-full bg-[#1b1b1b] text-white text-[11px] tracking-[0.2em] uppercase py-4 hover:bg-black transition-colors disabled:opacity-50"
+                  className="bg-[#1b1b1b] text-white text-[11px] tracking-[0.2em] uppercase px-12 py-4 hover:bg-black transition-colors disabled:opacity-50"
                 >
                   {status === "sending" ? t("sending") : t("send")}
                 </button>
@@ -200,6 +130,28 @@ export function BookingSection() {
           </div>
         </div>
       </div>
+
+      {/* Option 2 — Booking.com */}
+      <div className="px-6 md:px-10 py-16 md:py-[72px]">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20 items-center">
+          <div>
+            <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">Or book via</p>
+            <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-4">{t("bookingCom")}</h2>
+            <p className="text-[13px] leading-[1.8] text-[#666]">{t("bookingComDesc")}</p>
+          </div>
+          <div>
+            <Link
+              href="https://www.booking.com/hotel/gr/hersonissos.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-[#1b1b1b] text-[#1b1b1b] text-[11px] tracking-[0.2em] uppercase px-12 py-4 hover:bg-[#1b1b1b] hover:text-white transition-all"
+            >
+              Booking.com →
+            </Link>
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 }
