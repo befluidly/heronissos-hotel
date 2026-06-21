@@ -26,10 +26,10 @@ const FALLBACK_GALLERY: Record<string, string[]> = {
   ],
 };
 
-interface SanityRoom {
-  _id: string;
-  type: "superior" | "standard" | "economy";
-  mainImage?: { asset: { _ref: string } };
+interface RoomData {
+  
+  
+  mainPhoto?: { asset: { _ref: string } };
   gallery?: { asset: { _ref: string }; alt?: string }[];
 }
 
@@ -64,15 +64,15 @@ export function RoomsSection({ rooms }: Props) {
   const roomKeys = ["superior", "standard", "economy"] as const;
 
   const getMainImage = (key: string) => {
-    const sanityRoom = rooms?.find(r => r.type === key);
-    if (sanityRoom?.mainImage) return urlFor(sanityRoom.mainImage).width(800).quality(85).url();
+    const sanityRoom = rooms?.[key as keyof typeof rooms];
+    if (sanityRoom?.mainPhoto) return urlFor(sanityRoom.mainPhoto).width(800).quality(85).url();
     return FALLBACK_IMAGES[key as keyof typeof FALLBACK_IMAGES];
   };
 
   const getGallery = (key: string): string[] => {
-    const sanityRoom = rooms?.find(r => r.type === key);
+    const sanityRoom = rooms?.[key as keyof typeof rooms];
     if (sanityRoom?.gallery && sanityRoom.gallery.length > 0) {
-      return sanityRoom.gallery.map(img => urlFor(img).width(1600).quality(85).url());
+      return sanityRoom.gallery.map((img: { asset: { _ref: string } }) => urlFor(img).width(1600).quality(85).url());
     }
     return FALLBACK_GALLERY[key] || [];
   };

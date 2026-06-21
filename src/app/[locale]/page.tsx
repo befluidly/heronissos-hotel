@@ -9,17 +9,24 @@ import { AmenitiesSection } from "@/components/sections/AmenitiesSection";
 import { GallerySection } from "@/components/sections/GallerySection";
 import { BookingSection } from "@/components/sections/BookingSection";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { getHeroSlides, getGalleryPhotos, getRooms, getHotelInfo } from "@/lib/queries";
+import {
+  getHeroSlides,
+  getHotelIntro,
+  getRooms,
+  getGalleryPhotos,
+  getScoresContact,
+} from "@/lib/queries";
 
 export default async function HomePage() {
-  let heroSlides = [], galleryPhotos = [], rooms = [], hotelInfo = null;
+  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, scoresContact = null;
 
   try {
-    [heroSlides, galleryPhotos, rooms, hotelInfo] = await Promise.all([
+    [heroSlides, galleryPhotos, rooms, hotelIntro, scoresContact] = await Promise.all([
       getHeroSlides(),
       getGalleryPhotos(),
       getRooms(),
-      getHotelInfo(),
+      getHotelIntro(),
+      getScoresContact(),
     ]);
   } catch (error) {
     console.error("Sanity fetch error:", error);
@@ -28,8 +35,8 @@ export default async function HomePage() {
   return (
     <main>
       <HeroSection slides={heroSlides} />
-      <TrustBar hotelInfo={hotelInfo} />
-      <IntroSection hotelInfo={hotelInfo} />
+      <TrustBar hotelInfo={scoresContact} />
+      <IntroSection hotelInfo={hotelIntro} />
       <ExperienceSection />
       <RoomsSection rooms={rooms} />
       <AllInclusiveSection />
@@ -37,7 +44,7 @@ export default async function HomePage() {
       <AmenitiesSection />
       <GallerySection photos={galleryPhotos} />
       <BookingSection />
-      <ContactSection hotelInfo={hotelInfo} />
+      <ContactSection hotelInfo={scoresContact} />
     </main>
   );
 }

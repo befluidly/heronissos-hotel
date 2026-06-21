@@ -3,16 +3,98 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
+const singletonTypes = new Set([
+  'heroSlideshow',
+  'hotelIntro',
+  'superiorRoom',
+  'standardRoom',
+  'economyRoom',
+  'allInclusive',
+  'dining',
+  'gallery',
+  'scoresContact',
+])
+
 export default defineConfig({
   name: 'default',
-  title: 'HeronissosHotel',
+  title: 'Heronissos Hotel',
 
   projectId: 'djjar001',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [
+    structureTool({
+      structure: (S) =>
+        S.list()
+          .title('Website sections')
+          .items([
+            S.listItem()
+              .title('Hero Slideshow')
+              .child(S.document().schemaType('heroSlideshow').documentId('heroSlideshow')),
+
+            S.listItem()
+              .title('Hotel Introduction')
+              .child(S.document().schemaType('hotelIntro').documentId('hotelIntro')),
+
+            S.listItem()
+              .title('Rooms')
+              .child(
+                S.list()
+                  .title('Rooms')
+                  .items([
+                    S.listItem()
+                      .title('Superior Room')
+                      .child(S.document().schemaType('superiorRoom').documentId('superiorRoom')),
+                    S.listItem()
+                      .title('Standard Room')
+                      .child(S.document().schemaType('standardRoom').documentId('standardRoom')),
+                    S.listItem()
+                      .title('Economy Room')
+                      .child(S.document().schemaType('economyRoom').documentId('economyRoom')),
+                  ])
+              ),
+
+            S.listItem()
+              .title('All-Inclusive')
+              .child(S.document().schemaType('allInclusive').documentId('allInclusive')),
+
+            S.listItem()
+              .title('Dining')
+              .child(S.document().schemaType('dining').documentId('dining')),
+
+            S.listItem()
+              .title('Gallery')
+              .child(S.document().schemaType('gallery').documentId('gallery')),
+
+            S.divider(),
+
+            S.listItem()
+              .title('Extras & Services')
+              .child(
+                S.documentTypeList('extrasItem')
+                  .title('Extras & Services')
+              ),
+
+            S.divider(),
+
+            S.listItem()
+              .title('Scores & Contact')
+              .child(S.document().schemaType('scoresContact').documentId('scoresContact')),
+          ]),
+    }),
+    visionTool(),
+  ],
 
   schema: {
     types: schemaTypes,
+    templates: (templates) =>
+      templates.filter(({ schemaType }) => !singletonTypes.has(schemaType)),
+  },
+
+  document: {
+    actions: (input, context) =>
+      singletonTypes.has(context.schemaType)
+        ? input.filter(({ action }) => action && ['publish', 'discardChanges', 'restore'].includes(action))
+        : input,
   },
 })

@@ -2,23 +2,23 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { urlFor } from "@/lib/sanity";
 
-interface HotelInfo {
-  introText1?: string;
-  introText2?: string;
-  introImage?: { asset: { _ref: string } };
+interface HotelIntro {
+  paragraph1?: string;
+  paragraph2?: string;
+  photo?: { asset: { _ref: string } };
 }
 
 interface Props {
-  hotelInfo?: HotelInfo;
+  hotelInfo?: HotelIntro;
 }
 
 export function IntroSection({ hotelInfo }: Props) {
   const t = useTranslations("intro");
 
-  const p1 = hotelInfo?.introText1 || t("p1");
-  const p2 = hotelInfo?.introText2 || t("p2");
-  const imageSrc = hotelInfo?.introImage
-    ? urlFor(hotelInfo.introImage).width(800).quality(85).url()
+  const p1 = hotelInfo?.paragraph1 || t("p1");
+  const p2 = hotelInfo?.paragraph2 || t("p2");
+  const imageSrc = hotelInfo?.photo
+    ? urlFor(hotelInfo.photo).width(800).quality(85).url()
     : "/images/rooms/superior-10.JPG";
 
   return (
@@ -35,12 +35,7 @@ export function IntroSection({ hotelInfo }: Props) {
         </a>
       </div>
       <div className="relative w-full aspect-[16/9] bg-[#e0dcd5]">
-        <Image
-          src={imageSrc}
-          alt="Heronissos Hotel Room"
-          fill
-          className="object-cover"
-        />
+        <Image src={imageSrc} alt="Heronissos Hotel" fill className="object-cover" />
       </div>
     </section>
   );
