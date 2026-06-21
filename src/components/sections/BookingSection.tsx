@@ -42,12 +42,18 @@ Sent via heronissoshotel.gr`
   return (
     <section id="booking" className="bg-white">
 
+      {/* Header */}
+      <div className="px-6 md:px-10 pt-16 md:pt-[88px] pb-0">
+        <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">Reservations</p>
+        <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light">{t("bookYourStay")}</h2>
+      </div>
+
       {/* Option 1 — Direct request */}
-      <div className="px-6 md:px-10 py-16 md:py-[88px] border-b border-[#e0dcd5]">
+      <div className="px-6 md:px-10 py-12 md:py-16 border-b border-[#e0dcd5]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20">
           <div>
             <p className="text-[10px] tracking-[0.26em] uppercase text-[#b5a47c] mb-3">Recommended</p>
-            <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-4">{t("directTitle")}</h2>
+            <h2 className="font-display text-[clamp(22px,3vw,32px)] font-light mb-4">{t("directTitle")}</h2>
             <p className="text-[13px] leading-[1.8] text-[#666]">{t("directDesc")}</p>
           </div>
 
@@ -97,7 +103,7 @@ Sent via heronissoshotel.gr`
                   <option value="">—</option>
                   <option value="Superior Room">{t("superior")}</option>
                   <option value="Standard Room">{t("standard")}</option>
-                  <option value="Promo Room">{t("promo")}</option>
+                  <option value="Economy Room">{t("economy")}</option>
                 </select>
               </div>
               <div>
@@ -121,7 +127,7 @@ Sent via heronissoshotel.gr`
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20 items-center">
           <div>
             <p className="text-[10px] tracking-[0.26em] uppercase text-[#999] mb-3">Or book via</p>
-            <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-4">{t("bookingCom")}</h2>
+            <h2 className="font-display text-[clamp(22px,3vw,32px)] font-light mb-4">{t("bookingCom")}</h2>
             <p className="text-[13px] leading-[1.8] text-[#666]">{t("bookingComDesc")}</p>
           </div>
           <div>

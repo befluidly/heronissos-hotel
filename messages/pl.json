@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Pokój Economy"
   },
   "intro": {
     "tag": "Hotel",
@@ -62,30 +63,122 @@
   },
   "rooms": {
     "tag": "Zakwaterowanie",
-    "title": "Wybierz pokój",
+    "title": "Wybierz swój pokój",
+    "checkinout": "Zameldowanie 15:00 · Wymeldowanie 11:00",
+    "cta": "Zobacz zdjęcia",
+    "extraCostNote": "* Dodatkowa opłata, płatna na miejscu",
+    "extraCostNote2": "* Usługi oznaczone gwiazdką wymagają dodatkowej opłaty, płatnej na miejscu.",
+    "bindingTermTitle": "Polityka opaski",
+    "bindingTermDesc": "Przy przyjeździe każdy gość otrzymuje antyalergiczną opaskę, którą powinien nosić przez cały pobyt, aby korzystać ze wszystkich usług All-Inclusive.",
+    "roomFacilitiesTitle": "Wyposażenie & komfort pokoju",
+    "roomFacilitiesTag": "Wszystkie pokoje",
+    "roomFacilities": [
+      "Łóżeczko dziecięce na życzenie",
+      "Indywidualnie sterowana klimatyzacja",
+      "Mini lodówka (butelka wody przy przyjeździe)",
+      "Usługa budzenia",
+      "Szafa i biurko",
+      "Bezpłatne Wi-Fi",
+      "Sejf*",
+      "Artykuły toaletowe",
+      "Telefon bezpośredni*",
+      "Prywatna łazienka z WC, wanną lub prysznicem — suszarka i gniazdko do golarki w zestawie",
+      "Telewizor satelitarny LCD 22\"–32\"",
+      "Późne wymeldowanie* (zależnie od dostępności)"
+    ],
+    "hotelFacilitiesTitle": "Udogodnienia hotelowe",
+    "hotelFacilitiesTag": "Na miejscu",
+    "hotelFacilities": [
+      "Salon TV",
+      "Sala konferencyjna / biznesowa",
+      "2 baseny zewnętrzne ze słodką wodą",
+      "Przechowalnia bagażu",
+      "Sporty wodne na pobliskiej plaży (nie zarządzane przez hotel)",
+      "Bezpłatny parking",
+      "Mini Market"
+    ],
+    "guestServicesTitle": "Usługi dla gości",
+    "guestServicesTag": "Dla Twojego komfortu",
+    "guestServices": [
+      "Bezpłatne Wi-Fi w całym hotelu i we wszystkich pokojach",
+      "Obsługa bagażu",
+      "Wynajem samochodu*",
+      "Recepcja i concierge 24/7",
+      "Ochrona 24/7",
+      "Transfer lotniskowy*",
+      "Pierwsza pomoc i lekarz na wezwanie 24/7*",
+      "Drukowanie, faks i ksero*",
+      "Krajowe i zagraniczne pokazy rozrywkowe",
+      "Ręczniki basenowe i plażowe*"
+    ],
+    "wellnessTitle": "Centrum wellness",
+    "wellnessTag": "Relaks & regeneracja",
+    "wellnessDesc": "Obecnie niedostępne. Z niecierpliwością czekamy na powitanie Państwa z naszymi obiektami wellness w przyszłości.",
     "superior": {
       "cat": "Superior",
       "name": "Pokój Superior",
       "size": "22–25 m²",
-      "view": "Widok na basen i morze",
-      "guests": "Do 3 osób"
+      "location": "Budynek główny",
+      "desc": "W pełni wyremontowane pokoje oferujące nowoczesny komfort i przemyślane udogodnienia w sercu hotelu.",
+      "views": "Widok na basen · Widok na wnętrze · Widok na ulicę",
+      "bed": "Łóżko dwuosobowe, dwa łóżka jednoosobowe lub łóżko dwuosobowe z dodatkowym łóżkiem",
+      "facilities": [
+        "Indywidualna klimatyzacja",
+        "Mini lodówka",
+        "Suszarka do włosów",
+        "Sejf*",
+        "Czajnik elektryczny z kawą i herbatą",
+        "Szlafroki i kapcie",
+        "Prysznic walk-in",
+        "Artykuły łazienkowe przy przyjeździe",
+        "Balkon lub balkon francuski† z meblami",
+        "Bezpośrednia linia telefoniczna",
+        "Telewizor satelitarny z płaskim ekranem"
+      ],
+      "frenchBalcony": "† Balkon francuski to okno pełnej wysokości otwierające się na zewnątrz z małą balustradą — bez tarasu."
     },
     "standard": {
       "cat": "Standard",
       "name": "Pokój Standard",
       "size": "20–23 m²",
-      "view": "Widok na basen i ogród",
-      "guests": "Do 3 osób"
+      "location": "Budynek pomocniczy — nie w budynku głównym",
+      "desc": "Komfortowe pokoje w świeżym nowym stylu, zlokalizowane w budynkach pomocniczych przylegających do głównego hotelu.",
+      "views": "Widok na basen · Widok na wnętrze · Widok na ulicę · Widok na morze",
+      "bed": "Łóżko dwuosobowe, dwa łóżka jednoosobowe lub łóżko dwuosobowe z dodatkowym łóżkiem",
+      "facilities": [
+        "Indywidualna klimatyzacja",
+        "Mini lodówka",
+        "Suszarka do włosów",
+        "Sejf*",
+        "Balkon z meblami",
+        "Prywatna łazienka z prysznicem lub wanną",
+        "Artykuły łazienkowe przy przyjeździe",
+        "Ręczniki",
+        "Bezpośrednia linia telefoniczna",
+        "Telewizor satelitarny z płaskim ekranem"
+      ]
     },
-    "promo": {
-      "cat": "Promocyjny",
-      "name": "Pokój Promo",
-      "size": "18–25 m²",
-      "view": "Widok na dziedziniec",
-      "guests": "Do 3 osób"
-    },
-    "checkinout": "Zameldowanie 15:00 · Wymeldowanie 11:00",
-    "cta": "Odkryj ten pokój"
+    "economy": {
+      "cat": "Economy",
+      "name": "Pokój Economy",
+      "size": "18–22 m²",
+      "location": "Budynek pomocniczy — nie w budynku głównym",
+      "desc": "Praktyczny i wygodny wybór, idealny dla gości szukających komfortowego pobytu w dobrej cenie.",
+      "views": "Widok na wnętrze · Widok na ulicę",
+      "bed": "Łóżko dwuosobowe, dwa łóżka jednoosobowe lub łóżko dwuosobowe z dodatkowym łóżkiem",
+      "facilities": [
+        "Indywidualna klimatyzacja",
+        "Mini lodówka",
+        "Suszarka do włosów",
+        "Sejf*",
+        "Balkon z meblami",
+        "Prywatna łazienka z prysznicem lub wanną",
+        "Artykuły łazienkowe przy przyjeździe",
+        "Ręczniki",
+        "Bezpośrednia linia telefoniczna",
+        "Telewizor satelitarny z płaskim ekranem"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "Co jest wliczone",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Wódka, Rum",
       "Koktajle (alk. i bezalk.)",
       "Kawa i herbata",
-      "Woda niegazowana",
-      "Wymagana opaska"
-    ]
+      "Woda niegazowana"
+    ],
+    "wristbandTitle": "Polityka opaski",
+    "wristbandDesc": "Przy przyjeździe każdy gość otrzymuje antyalergiczną opaskę, którą powinien nosić przez cały pobyt, aby korzystać ze wszystkich usług All-Inclusive."
   },
   "amenities": {
     "tag": "Udogodnienia",

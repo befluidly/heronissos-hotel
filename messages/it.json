@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Camera Economy"
   },
   "intro": {
     "tag": "L'Hotel",
@@ -63,29 +64,121 @@
   "rooms": {
     "tag": "Sistemazioni",
     "title": "Scegli la tua camera",
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "Vedi le foto",
+    "extraCostNote": "* Costo extra, pagabile in loco",
+    "extraCostNote2": "* I servizi contrassegnati da asterisco richiedono un costo aggiuntivo, pagabile in loco.",
+    "bindingTermTitle": "Politica del braccialetto",
+    "bindingTermDesc": "All'arrivo, ogni ospite riceve un braccialetto antiallergico da indossare per tutta la durata del soggiorno per poter usufruire di tutti i servizi All-Inclusive.",
+    "roomFacilitiesTitle": "Dotazioni & comfort della camera",
+    "roomFacilitiesTag": "Tutte le camere",
+    "roomFacilities": [
+      "Lettino per bambini su richiesta",
+      "Aria condizionata individuale",
+      "Mini frigo (bottiglia d'acqua all'arrivo)",
+      "Sveglia",
+      "Armadio e scrivania",
+      "Wi-Fi gratuito",
+      "Cassaforte*",
+      "Articoli da toilette",
+      "Telefono diretto*",
+      "Bagno privato con WC, vasca o doccia — asciugacapelli e presa rasoio inclusi",
+      "TV LCD satellitare 22\"–32\"",
+      "Check-out posticipato* (soggetto a disponibilità)"
+    ],
+    "hotelFacilitiesTitle": "Strutture dell'hotel",
+    "hotelFacilitiesTag": "In loco",
+    "hotelFacilities": [
+      "Sala TV",
+      "Sala riunioni / business",
+      "2 piscine esterne d'acqua dolce",
+      "Deposito bagagli",
+      "Sport acquatici nella spiaggia vicina (non gestiti dall'hotel)",
+      "Parcheggio gratuito",
+      "Mini Market"
+    ],
+    "guestServicesTitle": "Servizi agli ospiti",
+    "guestServicesTag": "Per il vostro comfort",
+    "guestServices": [
+      "Wi-Fi gratuito in tutto l'hotel e in tutte le camere",
+      "Servizio bagagli",
+      "Noleggio auto*",
+      "Reception e concierge 24/7",
+      "Sicurezza 24/7",
+      "Transfer aeroporto*",
+      "Pronto soccorso e medico reperibile 24/7*",
+      "Stampa, fax e fotocopie*",
+      "Spettacoli di intrattenimento nazionali e internazionali",
+      "Asciugamani piscina e spiaggia*"
+    ],
+    "wellnessTitle": "Centro benessere",
+    "wellnessTag": "Relax & rigenerazione",
+    "wellnessDesc": "Attualmente non disponibile. Non vediamo l'ora di accogliervi con le nostre strutture benessere in futuro.",
     "superior": {
       "cat": "Superior",
       "name": "Camera Superior",
       "size": "22–25 m²",
-      "view": "Vista piscina, mare e giardino",
-      "guests": "Fino a 3 ospiti"
+      "location": "Edificio principale",
+      "desc": "Camere completamente rinnovate con comfort moderno e dotazioni curate nel cuore dell'hotel.",
+      "views": "Vista piscina · Vista interna · Vista strada",
+      "bed": "Letto matrimoniale, letti singoli o letto matrimoniale con letto singolo aggiuntivo",
+      "facilities": [
+        "Aria condizionata individuale",
+        "Mini frigo",
+        "Asciugacapelli",
+        "Cassaforte*",
+        "Bollitore con caffè e tè",
+        "Accappatoi e pantofole",
+        "Doccia walk-in",
+        "Articoli da bagno all'arrivo",
+        "Balcone o balcone francese† con mobili",
+        "Linea telefonica diretta",
+        "TV satellitare a schermo piatto"
+      ],
+      "frenchBalcony": "† Un balcone francese è una finestra a tutta altezza che si apre verso l'esterno con una piccola ringhiera — senza terrazza."
     },
     "standard": {
       "cat": "Standard",
       "name": "Camera Standard",
       "size": "20–23 m²",
-      "view": "Vista piscina e giardino",
-      "guests": "Fino a 3 ospiti"
+      "location": "Edificio annexo — non nell'edificio principale",
+      "desc": "Camere confortevoli con un aspetto rinnovato, situate negli edifici annexo adiacenti all'hotel principale.",
+      "views": "Vista piscina · Vista interna · Vista strada · Vista mare",
+      "bed": "Letto matrimoniale, letti singoli o letto matrimoniale con letto singolo aggiuntivo",
+      "facilities": [
+        "Aria condizionata individuale",
+        "Mini frigo",
+        "Asciugacapelli",
+        "Cassaforte*",
+        "Balcone con mobili",
+        "Bagno privato con doccia o vasca",
+        "Articoli da bagno all'arrivo",
+        "Asciugamani",
+        "Linea telefonica diretta",
+        "TV satellitare a schermo piatto"
+      ]
     },
-    "promo": {
-      "cat": "Economica",
-      "name": "Camera Promo",
-      "size": "18–25 m²",
-      "view": "Vista interna",
-      "guests": "Fino a 3 ospiti"
-    },
-    "checkinout": "Check-in 15:00 · Check-out 11:00",
-    "cta": "Scopri la camera"
+    "economy": {
+      "cat": "Economy",
+      "name": "Camera Economy",
+      "size": "18–22 m²",
+      "location": "Edificio annexo — non nell'edificio principale",
+      "desc": "Una scelta pratica e confortevole, ideale per chi cerca un soggiorno rilassante a un ottimo prezzo.",
+      "views": "Vista interna · Vista strada",
+      "bed": "Letto matrimoniale, letti singoli o letto matrimoniale con letto singolo aggiuntivo",
+      "facilities": [
+        "Aria condizionata individuale",
+        "Mini frigo",
+        "Asciugacapelli",
+        "Cassaforte*",
+        "Balcone con mobili",
+        "Bagno privato con doccia o vasca",
+        "Articoli da bagno all'arrivo",
+        "Asciugamani",
+        "Linea telefonica diretta",
+        "TV satellitare a schermo piatto"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "Cosa è incluso",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Vodka, Rum",
       "Cocktail (alc. e analc.)",
       "Caffè e tè",
-      "Acqua naturale",
-      "Braccialetto obbligatorio"
-    ]
+      "Acqua naturale"
+    ],
+    "wristbandTitle": "Politica del braccialetto",
+    "wristbandDesc": "All'arrivo, ogni ospite riceve un braccialetto antiallergico da indossare per tutta la durata del soggiorno per poter usufruire di tutti i servizi All-Inclusive."
   },
   "amenities": {
     "tag": "Servizi",

@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Chambre Économique"
   },
   "intro": {
     "tag": "L'Hôtel",
@@ -63,29 +64,121 @@
   "rooms": {
     "tag": "Hébergement",
     "title": "Choisissez votre chambre",
+    "checkinout": "Arrivée 15h00 · Départ 11h00",
+    "cta": "Voir les photos",
+    "extraCostNote": "* Supplément, payable sur place",
+    "extraCostNote2": "* Les services marqués d'un astérisque nécessitent un supplément, payable sur place.",
+    "bindingTermTitle": "Politique du bracelet",
+    "bindingTermDesc": "À l'arrivée, chaque client reçoit un bracelet anti-allergénique à porter tout au long du séjour afin de profiter de tous les services Tout Inclus.",
+    "roomFacilitiesTitle": "Équipements & confort des chambres",
+    "roomFacilitiesTag": "Toutes les chambres",
+    "roomFacilities": [
+      "Lit bébé sur demande",
+      "Climatisation individuelle",
+      "Mini réfrigérateur (bouteille d'eau à l'arrivée)",
+      "Service réveil",
+      "Armoire & bureau",
+      "Wi-Fi gratuit",
+      "Coffre-fort*",
+      "Produits de toilette",
+      "Téléphone direct*",
+      "Salle de bain privée avec WC, baignoire ou douche — sèche-cheveux & prise rasoir inclus",
+      "Télévision LCD satellite 22\"–32\"",
+      "Départ tardif* (selon disponibilité)"
+    ],
+    "hotelFacilitiesTitle": "Équipements de l'hôtel",
+    "hotelFacilitiesTag": "Sur place",
+    "hotelFacilities": [
+      "Salon TV",
+      "Salle de réunion / affaires",
+      "2 piscines extérieures à eau douce",
+      "Consigne à bagages",
+      "Sports nautiques à la plage voisine (non gérés par l'hôtel)",
+      "Parking gratuit",
+      "Mini Marché"
+    ],
+    "guestServicesTitle": "Services aux clients",
+    "guestServicesTag": "Pour votre confort",
+    "guestServices": [
+      "Wi-Fi gratuit dans tout l'hôtel et toutes les chambres",
+      "Service bagages",
+      "Location de voiture*",
+      "Réception et conciergerie 24h/24",
+      "Sécurité 24h/24",
+      "Navette aéroport*",
+      "Premiers secours & médecin de garde 24h/24*",
+      "Impression, fax & photocopie*",
+      "Spectacles nationaux et internationaux",
+      "Serviettes piscine & plage*"
+    ],
+    "wellnessTitle": "Centre bien-être",
+    "wellnessTag": "Détente & ressourcement",
+    "wellnessDesc": "Actuellement indisponible. Nous espérons vous accueillir avec nos installations bien-être dans le futur.",
     "superior": {
       "cat": "Supérieure",
       "name": "Chambre Supérieure",
       "size": "22–25 m²",
-      "view": "Vue piscine, mer et jardin",
-      "guests": "Jusqu'à 3 personnes"
+      "location": "Bâtiment principal",
+      "desc": "Chambres entièrement rénovées offrant un confort moderne et des équipements soignés au cœur de l'hôtel.",
+      "views": "Vue piscine · Vue intérieure · Vue rue",
+      "bed": "Lit double, lits jumeaux ou lit double avec lit simple supplémentaire",
+      "facilities": [
+        "Climatisation individuelle",
+        "Mini réfrigérateur",
+        "Sèche-cheveux",
+        "Coffre-fort*",
+        "Bouilloire avec café & thé",
+        "Peignoirs & chaussons",
+        "Douche à l'italienne",
+        "Produits de salle de bain à l'arrivée",
+        "Balcon ou balcon français† avec mobilier",
+        "Ligne téléphonique directe",
+        "Télévision satellite à écran plat"
+      ],
+      "frenchBalcony": "† Un balcon français est une fenêtre pleine hauteur qui s'ouvre vers l'extérieur avec une petite balustrade — sans terrasse."
     },
     "standard": {
       "cat": "Standard",
       "name": "Chambre Standard",
       "size": "20–23 m²",
-      "view": "Vue piscine et jardin",
-      "guests": "Jusqu'à 3 personnes"
+      "location": "Annexe — pas dans le bâtiment principal",
+      "desc": "Chambres confortables avec un nouveau look frais, situées dans les annexes adjacentes à l'hôtel principal.",
+      "views": "Vue piscine · Vue intérieure · Vue rue · Vue mer",
+      "bed": "Lit double, lits jumeaux ou lit double avec lit simple supplémentaire",
+      "facilities": [
+        "Climatisation individuelle",
+        "Mini réfrigérateur",
+        "Sèche-cheveux",
+        "Coffre-fort*",
+        "Balcon avec mobilier",
+        "Salle de bain privée avec douche ou baignoire",
+        "Produits de salle de bain à l'arrivée",
+        "Serviettes",
+        "Ligne téléphonique directe",
+        "Télévision satellite à écran plat"
+      ]
     },
-    "promo": {
+    "economy": {
       "cat": "Économique",
-      "name": "Chambre Promo",
-      "size": "18–25 m²",
-      "view": "Vue intérieure",
-      "guests": "Jusqu'à 3 personnes"
-    },
-    "checkinout": "Arrivée 15h00 · Départ 11h00",
-    "cta": "Découvrir la chambre"
+      "name": "Chambre Économique",
+      "size": "18–22 m²",
+      "location": "Annexe — pas dans le bâtiment principal",
+      "desc": "Un choix pratique et confortable, idéal pour les voyageurs souhaitant un séjour détendu à bon prix.",
+      "views": "Vue intérieure · Vue rue",
+      "bed": "Lit double, lits jumeaux ou lit double avec lit simple supplémentaire",
+      "facilities": [
+        "Climatisation individuelle",
+        "Mini réfrigérateur",
+        "Sèche-cheveux",
+        "Coffre-fort*",
+        "Balcon avec mobilier",
+        "Salle de bain privée avec douche ou baignoire",
+        "Produits de salle de bain à l'arrivée",
+        "Serviettes",
+        "Ligne téléphonique directe",
+        "Télévision satellite à écran plat"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "Ce qui est inclus",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Vodka, Rhum",
       "Cocktails (alc. et sans alc.)",
       "Café et thé",
-      "Eau plate",
-      "Bracelet obligatoire"
-    ]
+      "Eau plate"
+    ],
+    "wristbandTitle": "Politique du bracelet",
+    "wristbandDesc": "À l'arrivée, chaque client reçoit un bracelet anti-allergénique à porter tout au long du séjour afin de profiter de tous les services Tout Inclus."
   },
   "amenities": {
     "tag": "Équipements",

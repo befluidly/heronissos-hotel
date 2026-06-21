@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Economy Kamer"
   },
   "intro": {
     "tag": "Het Hotel",
@@ -63,29 +64,121 @@
   "rooms": {
     "tag": "Accommodatie",
     "title": "Kies uw kamer",
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "Foto's bekijken",
+    "extraCostNote": "* Extra kosten, ter plaatse te betalen",
+    "extraCostNote2": "* Diensten met een asterisk vereisen een toeslag, ter plaatse te betalen.",
+    "bindingTermTitle": "Polsband beleid",
+    "bindingTermDesc": "Bij aankomst ontvangt elke gast een anti-allergene polsband die gedurende het verblijf gedragen moet worden om te genieten van alle All-Inclusive diensten.",
+    "roomFacilitiesTitle": "Kamervoorzieningen & comfort",
+    "roomFacilitiesTag": "Alle kamers",
+    "roomFacilities": [
+      "Babybedje op aanvraag",
+      "Individueel geregelde airconditioning",
+      "Mini koelkast (fles water bij aankomst)",
+      "Wekdienst",
+      "Kast & schrijftafel",
+      "Gratis Wi-Fi",
+      "Kluisje*",
+      "Badkamerartikelen",
+      "Directe telefoonlijn*",
+      "Eigen badkamer met WC, bad of douche — haardroger & scheerstekker inbegrepen",
+      "Satelliet 22\"–32\" LCD TV",
+      "Laat uitchecken* (afhankelijk van beschikbaarheid)"
+    ],
+    "hotelFacilitiesTitle": "Hotelvoorzieningen",
+    "hotelFacilitiesTag": "Op het terrein",
+    "hotelFacilities": [
+      "TV lounge",
+      "Business / vergaderruimte",
+      "2 buitenzwembaden met zoet water",
+      "Bagageopslag",
+      "Watersport op het nabijgelegen strand (niet beheerd door het hotel)",
+      "Gratis parkeren",
+      "Mini Markt"
+    ],
+    "guestServicesTitle": "Gastendiensten",
+    "guestServicesTag": "Voor uw comfort",
+    "guestServices": [
+      "Gratis Wi-Fi in het gehele hotel en alle kamers",
+      "Bagageservice",
+      "Autoverhuur*",
+      "24/7 receptie en conciërge",
+      "24/7 beveiliging",
+      "Luchthaventransfer*",
+      "24/7 eerste hulp & arts op afroep*",
+      "Printen, fax & fotokopieën*",
+      "Nationale en internationale entertainmentshows",
+      "Zwembad- & strandhanddoeken*"
+    ],
+    "wellnessTitle": "Wellnesscentrum",
+    "wellnessTag": "Ontspannen & opladen",
+    "wellnessDesc": "Momenteel niet beschikbaar. We kijken ernaar uit u in de toekomst te verwelkomen met onze wellnessvoorzieningen.",
     "superior": {
       "cat": "Superior",
       "name": "Superior Kamer",
       "size": "22–25 m²",
-      "view": "Zwembad-, zee- en tuinzicht",
-      "guests": "Max. 3 gasten"
+      "location": "Hoofdgebouw",
+      "desc": "Volledig gerenoveerde kamers met modern comfort en doordachte voorzieningen in het hart van het hotel.",
+      "views": "Zwembadzicht · Binnenzicht · Straatzicht",
+      "bed": "Tweepersoonsbed, twee eenpersoonsbedden of tweepersoonsbed met extra eenpersoonsbed",
+      "facilities": [
+        "Individuele airconditioning",
+        "Mini koelkast",
+        "Haardroger",
+        "Kluisje*",
+        "Waterkoker met koffie & thee",
+        "Badjassen & slippers",
+        "Inloopdouche",
+        "Badkamerartikelen bij aankomst",
+        "Balkon of french balkon† met meubels",
+        "Directe telefoonlijn",
+        "Satelliet flatscreen TV"
+      ],
+      "frenchBalcony": "† Een french balkon is een volledig openend raam met een kleine balustrade — zonder terras."
     },
     "standard": {
       "cat": "Standaard",
       "name": "Standaard Kamer",
       "size": "20–23 m²",
-      "view": "Zwembad- en tuinzicht",
-      "guests": "Max. 3 gasten"
+      "location": "Bijgebouw — niet in het hoofdgebouw",
+      "desc": "Comfortabele kamers met een frisse nieuwe uitstraling, gelegen in de bijgebouwen naast het hoofdgebouw.",
+      "views": "Zwembadzicht · Binnenzicht · Straatzicht · Zeezicht",
+      "bed": "Tweepersoonsbed, twee eenpersoonsbedden of tweepersoonsbed met extra eenpersoonsbed",
+      "facilities": [
+        "Individuele airconditioning",
+        "Mini koelkast",
+        "Haardroger",
+        "Kluisje*",
+        "Balkon met meubels",
+        "Eigen badkamer met douche of bad",
+        "Badkamerartikelen bij aankomst",
+        "Handdoeken",
+        "Directe telefoonlijn",
+        "Satelliet flatscreen TV"
+      ]
     },
-    "promo": {
-      "cat": "Voordeel",
-      "name": "Promo Kamer",
-      "size": "18–25 m²",
-      "view": "Binnenaanzicht",
-      "guests": "Max. 3 gasten"
-    },
-    "checkinout": "Check-in 15:00 · Check-out 11:00",
-    "cta": "Bekijk deze kamer"
+    "economy": {
+      "cat": "Economy",
+      "name": "Economy Kamer",
+      "size": "18–22 m²",
+      "location": "Bijgebouw — niet in het hoofdgebouw",
+      "desc": "Een praktische en comfortabele keuze, ideaal voor gasten die zoeken naar een ontspannen verblijf aan een goede prijs.",
+      "views": "Binnenzicht · Straatzicht",
+      "bed": "Tweepersoonsbed, twee eenpersoonsbedden of tweepersoonsbed met extra eenpersoonsbed",
+      "facilities": [
+        "Individuele airconditioning",
+        "Mini koelkast",
+        "Haardroger",
+        "Kluisje*",
+        "Balkon met meubels",
+        "Eigen badkamer met douche of bad",
+        "Badkamerartikelen bij aankomst",
+        "Handdoeken",
+        "Directe telefoonlijn",
+        "Satelliet flatscreen TV"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "Wat is inbegrepen",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Vodka, Rum",
       "Cocktails (alc. & non-alc.)",
       "Koffie & thee",
-      "Plat water",
-      "Polsband verplicht"
-    ]
+      "Plat water"
+    ],
+    "wristbandTitle": "Polsband beleid",
+    "wristbandDesc": "Bij aankomst ontvangt elke gast een anti-allergene polsband die gedurende het verblijf gedragen moet worden om te genieten van alle All-Inclusive diensten."
   },
   "amenities": {
     "tag": "Faciliteiten",

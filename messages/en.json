@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Economy Room"
   },
   "intro": {
     "tag": "The Hotel",
@@ -63,29 +64,121 @@
   "rooms": {
     "tag": "Accommodations",
     "title": "Choose your room",
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "View photos",
+    "extraCostNote": "* Extra charge, payable locally",
+    "extraCostNote2": "* Services marked with an asterisk require an extra charge, payable locally.",
+    "bindingTermTitle": "Wristband policy",
+    "bindingTermDesc": "Upon arrival, each guest receives an anti-allergenic wristband to wear throughout their stay in order to enjoy all All-Inclusive services.",
+    "roomFacilitiesTitle": "Room facilities & amenities",
+    "roomFacilitiesTag": "All rooms",
+    "roomFacilities": [
+      "Baby cots available on request",
+      "Individually controlled air conditioning",
+      "Mini fridge (bottle of water upon arrival)",
+      "Wake-up call service",
+      "Closet & writing desk",
+      "Free Wi-Fi",
+      "Safety deposit box*",
+      "Bathroom amenities",
+      "Direct dial telephone*",
+      "Ensuite bathroom with WC, bathtub or shower — hairdryer & razor plug included",
+      "Satellite 22\"–32\" LCD TV",
+      "Late check-out* (subject to availability)"
+    ],
+    "hotelFacilitiesTitle": "Hotel facilities",
+    "hotelFacilitiesTag": "On site",
+    "hotelFacilities": [
+      "TV lounge",
+      "Business / Meeting lounge",
+      "2 outdoor freshwater swimming pools",
+      "Luggage storage room",
+      "Water sports available at nearby beach (not operated by the hotel)",
+      "Free parking",
+      "Mini Market"
+    ],
+    "guestServicesTitle": "Guest services",
+    "guestServicesTag": "For your comfort",
+    "guestServices": [
+      "Free Wi-Fi throughout the hotel and all guest rooms",
+      "Luggage service",
+      "Car rental*",
+      "24/7 Reception and concierge",
+      "24/7 Security",
+      "Airport transfer*",
+      "24/7 First aid & doctor on call*",
+      "Printing, fax & photocopying*",
+      "International and national entertainment shows",
+      "Pool & beach towels*"
+    ],
+    "wellnessTitle": "Wellness center",
+    "wellnessTag": "Relax & recharge",
+    "wellnessDesc": "Currently unavailable. We look forward to welcoming you with our wellness facilities in the future.",
     "superior": {
       "cat": "Superior",
       "name": "Superior Room",
       "size": "22–25 m²",
-      "view": "Pool, side sea & inland view",
-      "guests": "Up to 3 guests"
+      "location": "Main building",
+      "desc": "Fully renovated rooms offering modern comfort and thoughtful amenities in the heart of the hotel.",
+      "views": "Pool view · Inland view · Street view",
+      "bed": "Double bed, twin beds or double bed with extra single bed",
+      "facilities": [
+        "Split unit air conditioning",
+        "Mini fridge",
+        "Hairdryer",
+        "Safe box*",
+        "Electric kettle with coffee & tea",
+        "Bathrobes & slippers",
+        "Walk-in shower",
+        "Bathroom amenities upon arrival",
+        "Balcony or french balcony† with furniture",
+        "Direct telephone line",
+        "Satellite flat screen TV"
+      ],
+      "frenchBalcony": "† A french balcony is a full-length window that opens outward with a small railing — no terrace."
     },
     "standard": {
       "cat": "Standard",
       "name": "Standard Room",
       "size": "20–23 m²",
-      "view": "Pool, garden & inland view",
-      "guests": "Up to 3 guests"
+      "location": "Annex block — not in the main building",
+      "desc": "Comfortable rooms with a fresh new look, located in the annex blocks adjacent to the main hotel.",
+      "views": "Pool view · Inland view · Street view · Sea view",
+      "bed": "Double bed, twin beds or double bed with extra single bed",
+      "facilities": [
+        "Split unit air conditioning",
+        "Mini fridge",
+        "Hairdryer",
+        "Safe box*",
+        "Balcony with furniture",
+        "Private bathroom with shower or bathtub",
+        "Bathroom amenities upon arrival",
+        "Towels",
+        "Direct telephone line",
+        "Satellite flat screen TV"
+      ]
     },
-    "promo": {
-      "cat": "Value",
-      "name": "Promo Room",
-      "size": "18–25 m²",
-      "view": "Inland view",
-      "guests": "Up to 3 guests"
-    },
-    "checkinout": "Check-in 15:00 · Check-out 11:00",
-    "cta": "Discover this room"
+    "economy": {
+      "cat": "Economy",
+      "name": "Economy Room",
+      "size": "18–22 m²",
+      "location": "Annex block — not in the main building",
+      "desc": "A practical and comfortable choice, ideal for guests looking for a relaxed stay at great value.",
+      "views": "Inland view · Street view",
+      "bed": "Double bed, twin beds or double bed with extra single bed",
+      "facilities": [
+        "Split unit air conditioning",
+        "Mini fridge",
+        "Hairdryer",
+        "Safe box*",
+        "Balcony with furniture",
+        "Private bathroom with shower or bathtub",
+        "Bathroom amenities upon arrival",
+        "Towels",
+        "Direct telephone line",
+        "Satellite flat screen TV"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "What's included",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Vodka, Rum",
       "Cocktails (alc. & non-alc.)",
       "Coffee & tea",
-      "Still water",
-      "Wristband required"
-    ]
+      "Still water"
+    ],
+    "wristbandTitle": "Wristband policy",
+    "wristbandDesc": "Upon arrival, each guest receives an anti-allergenic wristband to wear throughout their stay in order to enjoy all All-Inclusive services."
   },
   "amenities": {
     "tag": "Facilities",

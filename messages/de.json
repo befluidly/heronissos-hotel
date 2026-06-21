@@ -42,7 +42,8 @@
     "superior": "Superior Room",
     "standard": "Standard Room",
     "promo": "Promo Room",
-    "nopreference": "No preference"
+    "nopreference": "No preference",
+    "economy": "Economy Zimmer"
   },
   "intro": {
     "tag": "Das Hotel",
@@ -63,29 +64,121 @@
   "rooms": {
     "tag": "Unterkunft",
     "title": "Wählen Sie Ihr Zimmer",
+    "checkinout": "Check-in 15:00 · Check-out 11:00",
+    "cta": "Fotos ansehen",
+    "extraCostNote": "* Aufpreis, vor Ort zu bezahlen",
+    "extraCostNote2": "* Mit einem Sternchen markierte Leistungen erfordern einen Aufpreis, der vor Ort zu bezahlen ist.",
+    "bindingTermTitle": "Armbandregelung",
+    "bindingTermDesc": "Bei der Ankunft erhält jeder Gast ein antiallergenes Armband, das während des gesamten Aufenthalts getragen werden muss, um alle All-Inclusive-Leistungen in Anspruch nehmen zu können.",
+    "roomFacilitiesTitle": "Zimmerausstattung & Komfort",
+    "roomFacilitiesTag": "Alle Zimmer",
+    "roomFacilities": [
+      "Babybett auf Anfrage",
+      "Individuell geregelte Klimaanlage",
+      "Mini-Kühlschrank (Wasserflasche bei Ankunft)",
+      "Weckservice",
+      "Schrank & Schreibtisch",
+      "Kostenlosem WLAN",
+      "Tresor*",
+      "Badezimmerartikel",
+      "Direktwahl-Telefon*",
+      "Eigenes Bad mit WC, Wanne oder Dusche — Haartrockner & Rasierersteckdose inklusive",
+      "Satelliten 22\"–32\" LCD TV",
+      "Später Auschecken* (je nach Verfügbarkeit)"
+    ],
+    "hotelFacilitiesTitle": "Hoteleinrichtungen",
+    "hotelFacilitiesTag": "Vor Ort",
+    "hotelFacilities": [
+      "TV-Lounge",
+      "Business- / Konferenzraum",
+      "2 Außenschwimmbäder mit Süßwasser",
+      "Gepäckaufbewahrung",
+      "Wassersport am nahe gelegenen Strand (nicht vom Hotel betrieben)",
+      "Kostenloser Parkplatz",
+      "Mini-Markt"
+    ],
+    "guestServicesTitle": "Gästeservice",
+    "guestServicesTag": "Für Ihren Komfort",
+    "guestServices": [
+      "Kostenloses WLAN im gesamten Hotel und allen Zimmern",
+      "Gepäckservice",
+      "Autovermietung*",
+      "24/7 Rezeption und Concierge",
+      "24/7 Sicherheit",
+      "Flughafentransfer*",
+      "24/7 Erste Hilfe & Arzt auf Abruf*",
+      "Drucken, Fax & Kopieren*",
+      "Nationale und internationale Unterhaltungsshows",
+      "Pool- & Strandtücher*"
+    ],
+    "wellnessTitle": "Wellnesszentrum",
+    "wellnessTag": "Entspannen & Erholen",
+    "wellnessDesc": "Derzeit nicht verfügbar. Wir freuen uns darauf, Sie in Zukunft mit unseren Wellnessangeboten zu begrüßen.",
     "superior": {
       "cat": "Superior",
       "name": "Superior Zimmer",
       "size": "22–25 m²",
-      "view": "Pool-, Meer- und Gartenblick",
-      "guests": "Bis zu 3 Gäste"
+      "location": "Hauptgebäude",
+      "desc": "Vollständig renovierte Zimmer mit modernem Komfort und durchdachter Ausstattung im Herzen des Hotels.",
+      "views": "Poolblick · Innenblick · Straßenblick",
+      "bed": "Doppelbett, Zweibettzimmer oder Doppelbett mit Zusatzbett",
+      "facilities": [
+        "Individuelle Klimaanlage",
+        "Mini-Kühlschrank",
+        "Haartrockner",
+        "Tresor*",
+        "Wasserkocher mit Kaffee & Tee",
+        "Bademäntel & Hausschuhe",
+        "Begehbare Dusche",
+        "Badezimmerartikel bei Ankunft",
+        "Balkon oder französischer Balkon† mit Möbeln",
+        "Direktwahl-Telefon",
+        "Satelliten-Flachbild-TV"
+      ],
+      "frenchBalcony": "† Ein französischer Balkon ist ein bodentiefes Fenster das nach außen öffnet, mit einem kleinen Geländer — ohne Terrasse."
     },
     "standard": {
       "cat": "Standard",
       "name": "Standard Zimmer",
       "size": "20–23 m²",
-      "view": "Pool- und Gartenblick",
-      "guests": "Bis zu 3 Gäste"
+      "location": "Nebengebäude — nicht im Hauptgebäude",
+      "desc": "Komfortable Zimmer mit frischem neuem Look, in den Nebengebäuden neben dem Haupthotel.",
+      "views": "Poolblick · Innenblick · Straßenblick · Meerblick",
+      "bed": "Doppelbett, Zweibettzimmer oder Doppelbett mit Zusatzbett",
+      "facilities": [
+        "Individuelle Klimaanlage",
+        "Mini-Kühlschrank",
+        "Haartrockner",
+        "Tresor*",
+        "Balkon mit Möbeln",
+        "Eigenes Bad mit Dusche oder Wanne",
+        "Badezimmerartikel bei Ankunft",
+        "Handtücher",
+        "Direktwahl-Telefon",
+        "Satelliten-Flachbild-TV"
+      ]
     },
-    "promo": {
-      "cat": "Günstig",
-      "name": "Promo Zimmer",
-      "size": "18–25 m²",
-      "view": "Hofblick",
-      "guests": "Bis zu 3 Gäste"
-    },
-    "checkinout": "Check-in 15:00 · Check-out 11:00",
-    "cta": "Zimmer entdecken"
+    "economy": {
+      "cat": "Economy",
+      "name": "Economy Zimmer",
+      "size": "18–22 m²",
+      "location": "Nebengebäude — nicht im Hauptgebäude",
+      "desc": "Eine praktische und komfortable Wahl, ideal für Gäste die einen entspannten Aufenthalt zu einem guten Preis suchen.",
+      "views": "Innenblick · Straßenblick",
+      "bed": "Doppelbett, Zweibettzimmer oder Doppelbett mit Zusatzbett",
+      "facilities": [
+        "Individuelle Klimaanlage",
+        "Mini-Kühlschrank",
+        "Haartrockner",
+        "Tresor*",
+        "Balkon mit Möbeln",
+        "Eigenes Bad mit Dusche oder Wanne",
+        "Badezimmerartikel bei Ankunft",
+        "Handtücher",
+        "Direktwahl-Telefon",
+        "Satelliten-Flachbild-TV"
+      ]
+    }
   },
   "allinclusive": {
     "tag": "Was ist inklusive",
@@ -120,9 +213,10 @@
       "Brandy, Gin, Vodka, Rum",
       "Cocktails (mit/ohne Alk.)",
       "Kaffee & Tee",
-      "Stilles Wasser",
-      "Armband erforderlich"
-    ]
+      "Stilles Wasser"
+    ],
+    "wristbandTitle": "Armbandregelung",
+    "wristbandDesc": "Bei der Ankunft erhält jeder Gast ein antiallergenes Armband, das während des gesamten Aufenthalts getragen werden muss, um alle All-Inclusive-Leistungen in Anspruch nehmen zu können."
   },
   "amenities": {
     "tag": "Einrichtungen",

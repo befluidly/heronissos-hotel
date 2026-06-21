@@ -28,10 +28,10 @@ export function AllInclusiveSection() {
       <div className="mt-12 pt-10 border-t border-white/[0.08] grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-start">
         <div>
           <h3 className="font-display text-[24px] md:text-[28px] font-light leading-[1.2]">
-  {t("drinksTitle")}
-  <br />
-  <em>10:00 – 23:00</em>
-</h3>
+            {t("drinksTitle")}
+            <br />
+            <em>10:00 – 23:00</em>
+          </h3>
         </div>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
           {drinks.map((drink, i) => (
@@ -40,6 +40,12 @@ export function AllInclusiveSection() {
             </li>
           ))}
         </ul>
+      </div>
+
+      {/* Wristband policy */}
+      <div className="mt-10 pt-8 border-t border-white/[0.06]">
+        <p className="text-[10px] tracking-[0.2em] uppercase text-[#b5a47c] mb-2">{t("wristbandTitle")}</p>
+        <p className="text-[12px] leading-[1.8] text-white/40 max-w-2xl">{t("wristbandDesc")}</p>
       </div>
     </section>
   );
