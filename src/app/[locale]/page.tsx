@@ -22,11 +22,11 @@ export default async function HomePage() {
 
   try {
     [heroSlides, galleryPhotos, rooms, hotelIntro, scoresContact] = await Promise.all([
-      getHeroSlides(),
-      getGalleryPhotos(),
-      getRooms(),
-      getHotelIntro(),
-      getScoresContact(),
+      getHeroSlides().catch(() => []),
+      getGalleryPhotos().catch(() => []),
+      getRooms().catch(() => null),
+      getHotelIntro().catch(() => null),
+      getScoresContact().catch(() => null),
     ]);
   } catch (error) {
     console.error("Sanity fetch error:", error);

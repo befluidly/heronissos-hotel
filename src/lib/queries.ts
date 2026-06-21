@@ -50,7 +50,7 @@ export async function getDining() {
 // Gallery
 export async function getGalleryPhotos() {
   const doc = await client.fetch(
-    `*[_type == "gallery" && _id == "gallery"][0]{ photos }`,
+    `*[_type == "gallery" && _id == "gallery"][0]{ "photos": photos[0...20] }`,
     {},
     { next: { revalidate: 60 } }
   )
