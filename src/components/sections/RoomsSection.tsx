@@ -27,14 +27,18 @@ const FALLBACK_GALLERY: Record<string, string[]> = {
 };
 
 interface RoomData {
-  
-  
   mainPhoto?: { asset: { _ref: string } };
   gallery?: { asset: { _ref: string }; alt?: string }[];
 }
 
+interface RoomsData {
+  superior?: RoomData;
+  standard?: RoomData;
+  economy?: RoomData;
+}
+
 interface Props {
-  rooms?: SanityRoom[];
+  rooms?: RoomsData | null;
 }
 
 function IconBed() {
