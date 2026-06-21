@@ -29,11 +29,8 @@ const FALLBACK_ALL = [
   { src: "/images/reception-lounge/reception-2.png", alt: "Reception" },
 ];
 
-interface SanityPhoto {
-  _id: string;
-  image: { asset: { _ref: string } };
-  alt?: string;
-}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type SanityPhoto = any;
 
 interface Props {
   photos?: SanityPhoto[];
@@ -45,11 +42,17 @@ export function GallerySection({ photos }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Build photo list from Sanity or fallback
+  // New schema: photos are direct image objects with asset._ref
+  // Old schema: photos had p.image.asset._ref
   const allPhotos = photos && photos.length > 0
-    ? photos.map(p => ({
-        src: urlFor(p.image).width(1600).quality(85).url(),
-        alt: p.alt || "Heronissos Hotel",
-      }))
+    ? photos
+        .filter(p => p && (p.asset?._ref || p.image?.asset?._ref))
+        .map(p => {
+          const src = p.asset?._ref
+            ? urlFor(p).width(1600).quality(85).url()
+            : urlFor(p.image).width(1600).quality(85).url();
+          return { src, alt: p.alt || "Heronissos Hotel" };
+        })
     : FALLBACK_ALL;
 
   const previewPhotos = allPhotos.slice(0, 4).length > 0
