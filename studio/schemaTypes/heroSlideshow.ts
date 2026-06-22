@@ -21,7 +21,7 @@ export const heroSlideshow = defineType({
               title: 'Photo',
               type: 'image',
               options: { hotspot: true },
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => unknown }) => Rule.required(),
             },
             {
               name: 'alt',
@@ -32,7 +32,7 @@ export const heroSlideshow = defineType({
           ],
           preview: {
             select: { media: 'image', title: 'alt' },
-            prepare({ media, title }) {
+            prepare({ media, title }: { media: unknown; title: string }) {
               return { title: title || 'Slide', media }
             },
           },

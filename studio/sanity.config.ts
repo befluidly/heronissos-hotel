@@ -30,19 +30,19 @@ export default defineConfig({
           .title('Website sections')
           .items([
             S.listItem()
-              .title('① Hero Slideshow')
+              .title('Hero Slideshow')
               .child(S.document().schemaType('heroSlideshow').documentId('heroSlideshow')),
 
             S.listItem()
-              .title('② Review Scores')
+              .title('Review Scores')
               .child(S.document().schemaType('reviewScores').documentId('reviewScores')),
 
             S.listItem()
-              .title('③ Hotel Introduction')
+              .title('Hotel Introduction')
               .child(S.document().schemaType('hotelIntro').documentId('hotelIntro')),
 
             S.listItem()
-              .title('④ Rooms')
+              .title('Rooms')
               .child(
                 S.list()
                   .title('Rooms')
@@ -60,15 +60,15 @@ export default defineConfig({
               ),
 
             S.listItem()
-              .title('⑤ All-Inclusive')
+              .title('All-Inclusive')
               .child(S.document().schemaType('allInclusive').documentId('allInclusive')),
 
             S.listItem()
-              .title('⑥ Dining')
+              .title('Dining')
               .child(S.document().schemaType('dining').documentId('dining')),
 
             S.listItem()
-              .title('⑦ Gallery')
+              .title('Gallery')
               .child(S.document().schemaType('gallery').documentId('gallery')),
 
             S.divider(),
