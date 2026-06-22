@@ -110,7 +110,18 @@ export function Footer() {
 
       <div className="border-t border-white/[0.07] pt-5 flex flex-col md:flex-row justify-between gap-2">
         <span className="text-[11px] text-white/18">© 2025 Heronissos Hotel · MH.T.E: 1039Κ014Α0045800</span>
-        <span className="text-[11px] text-white/18">{t("rights")}</span>
+        <div className="flex items-center gap-3">
+          <span className="text-[11px] text-white/18">{t("rights")}</span>
+          <span className="text-white/10">·</span>
+          <a
+            href="https://studio-minos.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display text-[13px] text-white/40 hover:text-white/70 transition-colors tracking-[0.06em]"
+          >
+            Designed by Minos Studio
+          </a>
+        </div>
       </div>
     </footer>
   );
