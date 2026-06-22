@@ -43,6 +43,12 @@ export const allInclusive = defineType({
       ],
     }),
     defineField({
+      name: 'drinksTime',
+      title: 'Drinks available from — until',
+      type: 'string',
+      description: 'e.g. 10:00 – 23:00',
+    }),
+    defineField({
       name: 'drinks',
       title: 'Drinks list',
       type: 'array',

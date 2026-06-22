@@ -10,6 +10,10 @@ const singletonTypes = new Set([
   'superiorRoom',
   'standardRoom',
   'economyRoom',
+  'roomFacilities',
+  'hotelFacilities',
+  'guestServices',
+  'wellnessCenter',
   'allInclusive',
   'dining',
   'gallery',
@@ -19,7 +23,6 @@ const singletonTypes = new Set([
 export default defineConfig({
   name: 'default',
   title: 'Heronissos Hotel',
-
   projectId: 'djjar001',
   dataset: 'production',
 
@@ -29,61 +32,42 @@ export default defineConfig({
         S.list()
           .title('Website sections')
           .items([
-            S.listItem()
-              .title('Hero Slideshow')
+            S.listItem().title('Hero Slideshow')
               .child(S.document().schemaType('heroSlideshow').documentId('heroSlideshow')),
-
-            S.listItem()
-              .title('Review Scores')
+            S.listItem().title('Review Scores')
               .child(S.document().schemaType('reviewScores').documentId('reviewScores')),
-
-            S.listItem()
-              .title('Hotel Introduction')
+            S.listItem().title('Hotel Introduction')
               .child(S.document().schemaType('hotelIntro').documentId('hotelIntro')),
-
-            S.listItem()
-              .title('Rooms')
+            S.listItem().title('Rooms')
               .child(
-                S.list()
-                  .title('Rooms')
-                  .items([
-                    S.listItem()
-                      .title('Superior Room')
-                      .child(S.document().schemaType('superiorRoom').documentId('superiorRoom')),
-                    S.listItem()
-                      .title('Standard Room')
-                      .child(S.document().schemaType('standardRoom').documentId('standardRoom')),
-                    S.listItem()
-                      .title('Economy Room')
-                      .child(S.document().schemaType('economyRoom').documentId('economyRoom')),
-                  ])
+                S.list().title('Rooms').items([
+                  S.listItem().title('Superior Room')
+                    .child(S.document().schemaType('superiorRoom').documentId('superiorRoom')),
+                  S.listItem().title('Standard Room')
+                    .child(S.document().schemaType('standardRoom').documentId('standardRoom')),
+                  S.listItem().title('Economy Room')
+                    .child(S.document().schemaType('economyRoom').documentId('economyRoom')),
+                ])
               ),
-
-            S.listItem()
-              .title('All-Inclusive')
+            S.listItem().title('Room Facilities & Amenities')
+              .child(S.document().schemaType('roomFacilities').documentId('roomFacilities')),
+            S.listItem().title('Hotel Facilities')
+              .child(S.document().schemaType('hotelFacilities').documentId('hotelFacilities')),
+            S.listItem().title('Guest Services')
+              .child(S.document().schemaType('guestServices').documentId('guestServices')),
+            S.listItem().title('Wellness Center')
+              .child(S.document().schemaType('wellnessCenter').documentId('wellnessCenter')),
+            S.listItem().title('All-Inclusive')
               .child(S.document().schemaType('allInclusive').documentId('allInclusive')),
-
-            S.listItem()
-              .title('Dining')
+            S.listItem().title('Dining')
               .child(S.document().schemaType('dining').documentId('dining')),
-
-            S.listItem()
-              .title('Gallery')
+            S.listItem().title('Gallery')
               .child(S.document().schemaType('gallery').documentId('gallery')),
-
             S.divider(),
-
-            S.listItem()
-              .title('Extras & Services')
-              .child(
-                S.documentTypeList('extrasItem')
-                  .title('Extras & Services')
-              ),
-
+            S.listItem().title('Extras & Services')
+              .child(S.documentTypeList('extrasItem').title('Extras & Services')),
             S.divider(),
-
-            S.listItem()
-              .title('Contact Details')
+            S.listItem().title('Contact Details')
               .child(S.document().schemaType('contactDetails').documentId('contactDetails')),
           ]),
     }),
