@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { urlFor } from "@/lib/sanity";
@@ -29,6 +29,13 @@ const FALLBACK_GALLERY: Record<string, string[]> = {
 interface RoomData {
   mainPhoto?: { asset: { _ref: string } };
   gallery?: { asset: { _ref: string }; alt?: string }[];
+  description?: string;
+  size?: string;
+  location?: string;
+  views?: string;
+  bedType?: string;
+  facilities?: string[];
+  frenchBalconyNote?: string;
 }
 
 interface RoomsData {
@@ -62,6 +69,7 @@ function IconClock() {
 
 export function RoomsSection({ rooms }: Props) {
   const t = useTranslations("rooms");
+  const locale = useLocale();
   const [lightbox, setLightbox] = useState<{ key: string; index: number } | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -79,6 +87,17 @@ export function RoomsSection({ rooms }: Props) {
       return sanityRoom.gallery.map((img: { asset: { _ref: string } }) => urlFor(img).width(1600).quality(85).url());
     }
     return FALLBACK_GALLERY[key] || [];
+  };
+
+  // Returns Sanity value if locale is "en" and value exists, otherwise falls back to translation
+  const sanityOrT = (sanityValue: string | undefined, translationValue: string) => {
+    if (locale === "en" && sanityValue) return sanityValue;
+    return translationValue;
+  };
+
+  const sanityFacilitiesOrT = (sanityValue: string[] | undefined, translationValue: string[]) => {
+    if (locale === "en" && sanityValue && sanityValue.length > 0) return sanityValue;
+    return translationValue;
   };
 
   const closeLightbox = () => setLightbox(null);
@@ -105,9 +124,9 @@ export function RoomsSection({ rooms }: Props) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#d8d4cc]">
           {roomKeys.map((key) => {
-            const img = getMainImage(key);
+            const sanityRoom = rooms?.[key];
             const room = t.raw(`${key}`) as Record<string, string | string[]>;
-            const facilities = room.facilities as string[];
+            const facilities = sanityFacilitiesOrT(sanityRoom?.facilities, room.facilities as string[]);
             const isExpanded = expanded === key;
 
             return (
@@ -116,7 +135,7 @@ export function RoomsSection({ rooms }: Props) {
                   className="relative w-full aspect-[16/10] bg-[#d0ccc4] cursor-pointer flex-shrink-0"
                   onClick={() => setLightbox({ key, index: 0 })}
                 >
-                  <Image src={img} alt={room.name as string} fill className="object-cover hover:scale-[1.02] transition-transform duration-500" />
+                  <Image src={getMainImage(key)} alt={room.name as string} fill className="object-cover hover:scale-[1.02] transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/15 transition-colors" />
                   <div className="absolute bottom-3 right-3 bg-black/50 text-white text-[10px] tracking-[0.16em] uppercase px-3 py-1.5">
                     {t("cta")}
@@ -126,24 +145,26 @@ export function RoomsSection({ rooms }: Props) {
                 <div className="p-6 pb-7 flex flex-col flex-1">
                   <p className="text-[9px] tracking-[0.24em] uppercase text-[#b5a47c] mb-1">{room.cat as string}</p>
                   <h3 className="font-display text-[22px] md:text-[24px] font-light mb-3">{room.name as string}</h3>
-                  <p className="text-[13px] leading-[1.75] text-[#666] mb-5">{room.desc as string}</p>
+                  <p className="text-[13px] leading-[1.75] text-[#666] mb-5">
+                    {sanityOrT(sanityRoom?.description, room.desc as string)}
+                  </p>
 
                   <ul className="space-y-2.5 mb-5">
                     <li className="text-[13px] text-[#555] flex items-start gap-2.5">
                       <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconSize /></span>
-                      <span>{room.size as string}</span>
+                      <span>{sanityOrT(sanityRoom?.size, room.size as string)}</span>
                     </li>
                     <li className="text-[13px] text-[#555] flex items-start gap-2.5">
                       <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconLocation /></span>
-                      <span>{room.location as string}</span>
+                      <span>{sanityOrT(sanityRoom?.location, room.location as string)}</span>
                     </li>
                     <li className="text-[13px] text-[#555] flex items-start gap-2.5">
                       <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconView /></span>
-                      <span>{room.views as string}</span>
+                      <span>{sanityOrT(sanityRoom?.views, room.views as string)}</span>
                     </li>
                     <li className="text-[13px] text-[#555] flex items-start gap-2.5">
                       <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconBed /></span>
-                      <span>{room.bed as string}</span>
+                      <span>{sanityOrT(sanityRoom?.bedType, room.bed as string)}</span>
                     </li>
                     <li className="text-[13px] text-[#555] flex items-start gap-2.5">
                       <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconClock /></span>
@@ -169,8 +190,10 @@ export function RoomsSection({ rooms }: Props) {
                           </li>
                         ))}
                       </ul>
-                      {key === "superior" && room.frenchBalcony && (
-                        <p className="text-[11px] text-[#aaa] mt-3 leading-[1.6]">{room.frenchBalcony as string}</p>
+                      {key === "superior" && (
+                        <p className="text-[11px] text-[#aaa] mt-3 leading-[1.6]">
+                          {sanityOrT(sanityRoom?.frenchBalconyNote, room.frenchBalcony as string)}
+                        </p>
                       )}
                       <p className="text-[11px] text-[#aaa] mt-2">{t("extraCostNote")}</p>
                     </div>
