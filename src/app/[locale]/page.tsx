@@ -11,24 +11,26 @@ import { BookingSection } from "@/components/sections/BookingSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import {
   getHeroSlides,
+  getReviewScores,
   getHotelIntro,
   getRooms,
   getGalleryPhotos,
-  getScoresContact,
   getDining,
+  getContactDetails,
 } from "@/lib/queries";
 
 export default async function HomePage() {
-  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, scoresContact = null, dining = null;
+  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, reviewScores = null, dining = null, contactDetails = null;
 
   try {
-    [heroSlides, galleryPhotos, rooms, hotelIntro, scoresContact, dining] = await Promise.all([
+    [heroSlides, reviewScores, hotelIntro, rooms, galleryPhotos, dining, contactDetails] = await Promise.all([
       getHeroSlides().catch(() => []),
-      getGalleryPhotos().catch(() => []),
-      getRooms().catch(() => null),
+      getReviewScores().catch(() => null),
       getHotelIntro().catch(() => null),
-      getScoresContact().catch(() => null),
+      getRooms().catch(() => null),
+      getGalleryPhotos().catch(() => []),
       getDining().catch(() => null),
+      getContactDetails().catch(() => null),
     ]);
   } catch (error) {
     console.error("Sanity fetch error:", error);
@@ -37,7 +39,7 @@ export default async function HomePage() {
   return (
     <main>
       <HeroSection slides={heroSlides} />
-      <TrustBar hotelInfo={scoresContact} />
+      <TrustBar hotelInfo={reviewScores} />
       <IntroSection hotelInfo={hotelIntro} />
       <ExperienceSection />
       <RoomsSection rooms={rooms} />
@@ -46,7 +48,7 @@ export default async function HomePage() {
       <AmenitiesSection />
       <GallerySection photos={galleryPhotos} />
       <BookingSection />
-      <ContactSection hotelInfo={scoresContact} />
+      <ContactSection hotelInfo={contactDetails} />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 const singletonTypes = new Set([
   'heroSlideshow',
+  'reviewScores',
   'hotelIntro',
   'superiorRoom',
   'standardRoom',
@@ -12,7 +13,7 @@ const singletonTypes = new Set([
   'allInclusive',
   'dining',
   'gallery',
-  'scoresContact',
+  'contactDetails',
 ])
 
 export default defineConfig({
@@ -29,15 +30,19 @@ export default defineConfig({
           .title('Website sections')
           .items([
             S.listItem()
-              .title('Hero Slideshow')
+              .title('① Hero Slideshow')
               .child(S.document().schemaType('heroSlideshow').documentId('heroSlideshow')),
 
             S.listItem()
-              .title('Hotel Introduction')
+              .title('② Review Scores')
+              .child(S.document().schemaType('reviewScores').documentId('reviewScores')),
+
+            S.listItem()
+              .title('③ Hotel Introduction')
               .child(S.document().schemaType('hotelIntro').documentId('hotelIntro')),
 
             S.listItem()
-              .title('Rooms')
+              .title('④ Rooms')
               .child(
                 S.list()
                   .title('Rooms')
@@ -55,15 +60,15 @@ export default defineConfig({
               ),
 
             S.listItem()
-              .title('All-Inclusive')
+              .title('⑤ All-Inclusive')
               .child(S.document().schemaType('allInclusive').documentId('allInclusive')),
 
             S.listItem()
-              .title('Dining')
+              .title('⑥ Dining')
               .child(S.document().schemaType('dining').documentId('dining')),
 
             S.listItem()
-              .title('Gallery')
+              .title('⑦ Gallery')
               .child(S.document().schemaType('gallery').documentId('gallery')),
 
             S.divider(),
@@ -78,8 +83,8 @@ export default defineConfig({
             S.divider(),
 
             S.listItem()
-              .title('Scores & Contact')
-              .child(S.document().schemaType('scoresContact').documentId('scoresContact')),
+              .title('Contact Details')
+              .child(S.document().schemaType('contactDetails').documentId('contactDetails')),
           ]),
     }),
     visionTool(),
