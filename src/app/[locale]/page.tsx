@@ -15,18 +15,20 @@ import {
   getRooms,
   getGalleryPhotos,
   getScoresContact,
+  getDining,
 } from "@/lib/queries";
 
 export default async function HomePage() {
-  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, scoresContact = null;
+  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, scoresContact = null, dining = null;
 
   try {
-    [heroSlides, galleryPhotos, rooms, hotelIntro, scoresContact] = await Promise.all([
+    [heroSlides, galleryPhotos, rooms, hotelIntro, scoresContact, dining] = await Promise.all([
       getHeroSlides().catch(() => []),
       getGalleryPhotos().catch(() => []),
       getRooms().catch(() => null),
       getHotelIntro().catch(() => null),
       getScoresContact().catch(() => null),
+      getDining().catch(() => null),
     ]);
   } catch (error) {
     console.error("Sanity fetch error:", error);
@@ -40,7 +42,7 @@ export default async function HomePage() {
       <ExperienceSection />
       <RoomsSection rooms={rooms} />
       <AllInclusiveSection />
-      <DiningSection />
+      <DiningSection dining={dining} />
       <AmenitiesSection />
       <GallerySection photos={galleryPhotos} />
       <BookingSection />

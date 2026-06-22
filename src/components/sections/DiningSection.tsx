@@ -1,8 +1,33 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { urlFor } from "@/lib/sanity";
 
-export function DiningSection() {
+interface DiningData {
+  labyrinthPhoto?: { asset: { _ref: string } };
+  labyrinthType?: string;
+  labyrinthDesc?: string;
+  nissosPhoto?: { asset: { _ref: string } };
+  nissosType?: string;
+  nissosDesc?: string;
+}
+
+interface Props {
+  dining?: DiningData | null;
+}
+
+export function DiningSection({ dining }: Props) {
   const t = useTranslations("dining");
+
+  const labyrinthType = dining?.labyrinthType || t("labyrinthType");
+  const labyrinthDesc = dining?.labyrinthDesc || t("labyrinthDesc");
+  const nissosType = dining?.nissosType || t("nissosType");
+  const nissosDesc = dining?.nissosDesc || t("nissosDesc");
+
+  const diningImageSrc = dining?.labyrinthPhoto
+    ? urlFor(dining.labyrinthPhoto).width(800).quality(85).url()
+    : dining?.nissosPhoto
+    ? urlFor(dining.nissosPhoto).width(800).quality(85).url()
+    : "/images/dining/RESTAURANT-VIEW-005.JPEG";
 
   return (
     <section id="dining" className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[72px] items-start px-6 md:px-10 py-16 md:py-[88px]">
@@ -13,9 +38,9 @@ export function DiningSection() {
         </h2>
 
         <div className="mb-8">
-          <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{t("labyrinthType")}</p>
+          <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{labyrinthType}</p>
           <h3 className="font-display text-[22px] font-light mb-3">Labyrinth</h3>
-          <p className="text-[13px] leading-[1.85] text-[#666] mb-4">{t("labyrinthDesc")}</p>
+          <p className="text-[13px] leading-[1.85] text-[#666] mb-4">{labyrinthDesc}</p>
           <div className="space-y-1">
             {[["07:30 – 10:00", t("breakfast")], ["12:30 – 14:00", t("lunch")], ["18:30 – 21:00", t("dinner")]].map(([time, label]) => (
               <div key={time} className="flex gap-3 text-[12px]">
@@ -27,9 +52,9 @@ export function DiningSection() {
         </div>
 
         <div className="pt-8 border-t border-black/10">
-          <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{t("nissosType")}</p>
+          <p className="text-[10px] tracking-[0.2em] uppercase text-[#aaa] mb-1">{nissosType}</p>
           <h3 className="font-display text-[22px] font-light mb-3">Nissos</h3>
-          <p className="text-[13px] leading-[1.85] text-[#666] mb-4">{t("nissosDesc")}</p>
+          <p className="text-[13px] leading-[1.85] text-[#666] mb-4">{nissosDesc}</p>
           <div className="flex gap-3 text-[12px]">
             <strong className="font-medium min-w-[110px]">10:00 – 24:00</strong>
             <span className="text-[#666]">{t("poolbar")}</span>
@@ -39,8 +64,8 @@ export function DiningSection() {
 
       <div className="relative w-full aspect-[4/3] bg-[#e8e4dd]">
         <Image
-          src="/images/dining/RESTAURANT-VIEW-005.JPEG"
-          alt="Nissos Pool Bar"
+          src={diningImageSrc}
+          alt="Dining at Heronissos Hotel"
           fill
           className="object-cover"
         />
