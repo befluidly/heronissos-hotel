@@ -14,20 +14,22 @@ import {
   getReviewScores,
   getHotelIntro,
   getRooms,
+  getAmenities,
   getGalleryPhotos,
   getDining,
   getContactDetails,
 } from "@/lib/queries";
 
 export default async function HomePage() {
-  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, reviewScores = null, dining = null, contactDetails = null;
+  let heroSlides = [], galleryPhotos = [], rooms = null, hotelIntro = null, reviewScores = null, dining = null, contactDetails = null, amenities = null;
 
   try {
-    [heroSlides, reviewScores, hotelIntro, rooms, galleryPhotos, dining, contactDetails] = await Promise.all([
+    [heroSlides, reviewScores, hotelIntro, rooms, amenities, galleryPhotos, dining, contactDetails] = await Promise.all([
       getHeroSlides().catch(() => []),
       getReviewScores().catch(() => null),
       getHotelIntro().catch(() => null),
       getRooms().catch(() => null),
+      getAmenities().catch(() => null),
       getGalleryPhotos().catch(() => []),
       getDining().catch(() => null),
       getContactDetails().catch(() => null),
@@ -45,7 +47,7 @@ export default async function HomePage() {
       <RoomsSection rooms={rooms} />
       <AllInclusiveSection />
       <DiningSection dining={dining} />
-      <AmenitiesSection />
+      <AmenitiesSection amenities={amenities} />
       <GallerySection photos={galleryPhotos} />
       <BookingSection />
       <ContactSection hotelInfo={contactDetails} />
