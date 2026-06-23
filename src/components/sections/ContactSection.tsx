@@ -10,6 +10,19 @@ interface Props {
   hotelInfo?: HotelInfo;
 }
 
+function IconLocation() {
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>;
+}
+function IconPhone() {
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>;
+}
+function IconMail() {
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>;
+}
+function IconClock() {
+  return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
+}
+
 export function ContactSection({ hotelInfo }: Props) {
   const t = useTranslations("contact");
 
@@ -24,7 +37,7 @@ export function ContactSection({ hotelInfo }: Props) {
         <h2 className="font-display text-[clamp(28px,4vw,42px)] font-light mb-10">{t("title")}</h2>
         <div className="space-y-5">
           <div className="flex gap-3">
-            <span className="text-[#aaa] mt-1">◈</span>
+            <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconLocation /></span>
             <a
               href="https://maps.app.goo.gl/NzXaxff9gwbW8R656"
               target="_blank"
@@ -35,18 +48,18 @@ export function ContactSection({ hotelInfo }: Props) {
             </a>
           </div>
           <div className="flex gap-3">
-            <span className="text-[#aaa] mt-1">☎</span>
+            <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconPhone /></span>
             <div className="text-[13px] text-[#666]">
               <a href={`tel:${phone1.replace(/[^+\d]/g, "")}`} className="block hover:text-[#111] transition-colors">{phone1}</a>
               {phone2 && <a href={`tel:${phone2.replace(/[^+\d]/g, "")}`} className="block hover:text-[#111] transition-colors">{phone2}</a>}
             </div>
           </div>
           <div className="flex gap-3">
-            <span className="text-[#aaa] mt-1">✉</span>
+            <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconMail /></span>
             <a href={`mailto:${email}`} className="text-[13px] text-[#666] hover:text-[#111] transition-colors">{email}</a>
           </div>
           <div className="flex gap-3">
-            <span className="text-[#aaa] mt-1">⌚</span>
+            <span className="text-[#b5a47c] mt-0.5 flex-shrink-0"><IconClock /></span>
             <span className="text-[13px] text-[#666]">{t("reception")}</span>
           </div>
           <div className="pt-2">

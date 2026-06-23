@@ -60,6 +60,14 @@ export async function getDining() {
   )
 }
 
+export async function getAmenities() {
+  const doc = await client.fetch(
+    `*[_type == "amenities" && _id == "amenities"][0]{ items }`,
+    {}, { next: { revalidate: 60 } }
+  )
+  return doc?.items || null
+}
+
 export async function getGalleryPhotos() {
   const doc = await client.fetch(
     `*[_type == "gallery" && _id == "gallery"][0]{ "photos": photos[0...20] }`,

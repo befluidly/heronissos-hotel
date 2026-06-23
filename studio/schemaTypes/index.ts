@@ -8,6 +8,7 @@ import { guestServices } from './guestServices'
 import { wellnessCenter } from './wellnessCenter'
 import { allInclusive } from './allInclusive'
 import { dining } from './dining'
+import { amenities } from './amenities'
 import { gallery } from './gallery'
 import { extrasItem } from './extrasItem'
 import { contactDetails } from './contactDetails'
@@ -25,6 +26,7 @@ export const schemaTypes = [
   wellnessCenter,
   allInclusive,
   dining,
+amenities,
   gallery,
   extrasItem,
   contactDetails,
