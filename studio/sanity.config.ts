@@ -16,6 +16,7 @@ const singletonTypes = new Set([
   'wellnessCenter',
   'allInclusive',
   'dining',
+  'amenities',
   'gallery',
   'contactDetails',
 ])
@@ -61,6 +62,8 @@ export default defineConfig({
               .child(S.document().schemaType('allInclusive').documentId('allInclusive')),
             S.listItem().title('Dining')
               .child(S.document().schemaType('dining').documentId('dining')),
+            S.listItem().title('Amenities & Services')
+              .child(S.document().schemaType('amenities').documentId('amenities')),
             S.listItem().title('Gallery')
               .child(S.document().schemaType('gallery').documentId('gallery')),
             S.divider(),
