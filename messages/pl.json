@@ -320,5 +320,11 @@
     "carRentalTitle": "Wynajem samochodu",
     "carRentalDesc": "Odkrywaj Kretę we własnym tempie. Organizujemy samochód dostarczony bezpośrednio do hotelu — bez kolejek, bez kłopotów. Dostępny na dowolny czas.",
     "introText": "Kreta to nie tylko cel podróży. To żywe muzeum starożytnych cywilizacji, dramatycznych krajobrazów i szczodrości ducha, która pozostaje z tobą długo po wyjeździe. Od pałacu Knossos po wąwozy Samarii, od lokalnych winiarni po ukryte morskie groty — wyspa nagradza tych, którzy ją odkrywają. W hotelu Heronissos ułatwiamy wszystko. Nasz zespół organizuje każdy szczegół, abyś mógł skupić się na tym, co najważniejsze: przeżywaniu Krety w najlepszym wydaniu."
-  }
+  },
+"cookies": {
+  "message": "Używamy plików cookie, aby poprawić Twoje doświadczenie na naszej stronie.",
+  "policy": "Polityka prywatności",
+  "accept": "Akceptuj",
+  "decline": "Odrzuć"
+}
 }

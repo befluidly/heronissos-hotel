@@ -320,5 +320,11 @@
     "carRentalTitle": "Car rental",
     "carRentalDesc": "Explore Crete at your own pace. We arrange a rental car delivered directly to the hotel — no queues, no hassle. Available for any duration.",
     "introText": "Crete is not just a destination. It is a living museum of ancient civilisations, dramatic landscapes and a generosity of spirit that stays with you long after you leave. From the palace of Knossos to the gorges of Samaria, from local wineries to hidden sea caves — the island rewards those who explore it. At Heronissos Hotel, we make it easy. Our team arranges everything so you can focus on what matters: experiencing Crete at its best."
-  }
+  },
+"cookies": {
+  "message": "We use cookies to improve your experience on our website.",
+  "policy": "Privacy policy",
+  "accept": "Accept",
+  "decline": "Decline"
+}
 }

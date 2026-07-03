@@ -321,4 +321,11 @@
     "carRentalDesc": "Esplora Creta al tuo ritmo. Organizziamo un'auto a noleggio consegnata direttamente in hotel — nessuna coda, nessun problema. Disponibile per qualsiasi durata.",
     "introText": "Creta non è solo una destinazione. È un museo vivente di antiche civiltà, paesaggi drammatici e una generosità di spirito che rimane con te molto dopo la partenza. Dal palazzo di Cnosso alle gole di Samaria, dalle cantine locali alle calette nascoste — l'isola premia chi la esplora. All'Hotel Heronissos rendiamo tutto semplice. Il nostro team organizza ogni dettaglio perché tu possa concentrarti su ciò che conta: vivere Creta al meglio."
   }
+,
+"cookies": {
+  "message": "Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito.",
+  "policy": "Informativa sulla privacy",
+  "accept": "Accetta",
+  "decline": "Rifiuta"
+}
 }

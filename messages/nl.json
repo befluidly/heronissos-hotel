@@ -321,4 +321,11 @@
     "carRentalDesc": "Ontdek Kreta op uw eigen tempo. Wij regelen een huurauto die rechtstreeks aan het hotel wordt geleverd — geen wachtrijen, geen gedoe. Beschikbaar voor elke duur.",
     "introText": "Kreta is niet zomaar een bestemming. Het is een levend museum van oude beschavingen, dramatische landschappen en een gastvrijheid die je lang bijblijft nadat je vertrokken bent. Van het paleis van Knossos tot de kloven van Samaria, van lokale wijnmakerijen tot verborgen zeegrotten — het eiland beloont wie het ontdekt. Bij Heronissos Hotel maken we het makkelijk. Ons team regelt alles zodat jij je kan focussen op wat telt: Kreta op zijn best."
   }
+,
+"cookies": {
+  "message": "We gebruiken cookies om uw ervaring op onze website te verbeteren.",
+  "policy": "Privacybeleid",
+  "accept": "Accepteren",
+  "decline": "Weigeren"
+}
 }
